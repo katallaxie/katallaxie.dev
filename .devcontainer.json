@@ -1,0 +1,8 @@
+{
+    "name": "katallaxie/katallaxie.dev",
+    "image": "mcr.microsoft.com/vscode/devcontainers/go:latest",
+    "workspaceFolder": "/workspace",
+    "settings": {},
+    "extensions": [],
+    "forwardPorts": [1313]
+  }
