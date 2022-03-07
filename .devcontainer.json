@@ -1,6 +1,6 @@
 {
     "name": "katallaxie/katallaxie.dev",
-    "image": "mcr.microsoft.com/vscode/devcontainers/go:latest",
+    "image": "mcr.microsoft.com/vscode/devcontainers/universal:latest",
     "workspaceFolder": "/workspace",
     "settings": {},
     "extensions": [],

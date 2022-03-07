@@ -1,0 +1,22 @@
+{
+  "name": "katallaxie",
+  "version": "0.0.1",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "concurrently npm:watch:*",
+    "watch:tw": "tailwindcss -i ./assets/css/main.css -o ./assets/css/style.css --watch"
+  },
+  "author": "",
+  "license": "MIT",
+  "dependencies": {
+    "autoprefixer": "^10.2.1",
+    "postcss": "^8.2.4",
+    "postcss-cli": "^8.3.1",
+    "tailwindcss": "^2.0.2"
+  },
+  "devDependencies": {
+    "concurrently": "^7.0.0"
+  }
+}
