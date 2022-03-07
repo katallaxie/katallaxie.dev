@@ -6,7 +6,8 @@
     <link rel="stylesheet" type="text/css" href="/css/style.css">
 
     {{- /* Styles */}}
-    {{ $styles := resources.Get "css/main.css" }}
+    {{ $css := resources.Get "css/main.css" }}
+    {{ $styles := $css | resources.PostCSS }}
 
     {{ if .Site.IsServer }}
         <link rel="stylesheet" href="{{ $styles.RelPermalink }}"/>
