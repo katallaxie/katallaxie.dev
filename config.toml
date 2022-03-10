@@ -3,3 +3,6 @@ languageCode = 'en-us'
 title = 'Sebastian Döll | Senior Software Engineer'
 
 theme = 'katallaxie'
+
+[build]
+  writeStats = true

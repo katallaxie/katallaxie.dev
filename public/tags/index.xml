@@ -5,25 +5,6 @@
     <link>https://katallaxie.me/tags/</link>
     <description>Recent content in Tags on Sebastian Döll | Senior Software Engineer</description>
     <generator>Hugo -- gohugo.io</generator>
-    <language>en-us</language>
-    <lastBuildDate>Sun, 26 Jan 2020 23:11:13 +0000</lastBuildDate><atom:link href="https://katallaxie.me/tags/index.xml" rel="self" type="application/rss+xml" />
-    <item>
-      <title>bar</title>
-      <link>https://katallaxie.me/tags/bar/</link>
-      <pubDate>Sun, 26 Jan 2020 23:11:13 +0000</pubDate>
-      
-      <guid>https://katallaxie.me/tags/bar/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>foo</title>
-      <link>https://katallaxie.me/tags/foo/</link>
-      <pubDate>Sun, 26 Jan 2020 23:11:13 +0000</pubDate>
-      
-      <guid>https://katallaxie.me/tags/foo/</guid>
-      <description></description>
-    </item>
-    
+    <language>en-us</language><atom:link href="https://katallaxie.me/tags/index.xml" rel="self" type="application/rss+xml" />
   </channel>
 </rss>

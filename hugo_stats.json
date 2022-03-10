@@ -1,0 +1,32 @@
+{
+  "htmlElements": {
+    "tags": [
+      "aside",
+      "body",
+      "button",
+      "circle",
+      "div",
+      "head",
+      "header",
+      "html",
+      "line",
+      "link",
+      "meta",
+      "nav",
+      "path",
+      "script",
+      "svg",
+      "title"
+    ],
+    "classes": [
+      "'header",
+      "not-found"
+    ],
+    "ids": [
+      "content",
+      "moon",
+      "sun",
+      "theme-toggle"
+    ]
+  }
+}

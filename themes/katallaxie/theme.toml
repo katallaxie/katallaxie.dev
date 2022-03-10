@@ -11,6 +11,10 @@ min_version = "0.41.0"
   name = "Sebastian Döll"
   homepage = "https://katallaxie.me"
 
+features = [
+  "theme-toggle"
+]
+
 # If porting an existing theme
 [original]
   name = ""
