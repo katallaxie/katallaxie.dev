@@ -128,14 +128,14 @@ header {
     @apply xl:col-span-1; 
     @apply md:border-r; 
     @apply md:border-gray-700;
+}
 
-    aside {
-        @apply w-full;
-        @apply h-full;
-        @apply flex;
-        @apply justify-start;
-        @apply md:justify-end;
-    }
+header aside {
+    @apply w-full;
+    @apply h-full;
+    @apply flex;
+    @apply justify-start;
+    @apply md:justify-end;
 }
 
 #menu-toggle {
@@ -152,13 +152,29 @@ header {
     @apply px-6;
 }
 
+button#menu-toggle div {
+    @apply w-full;
+    @apply flex;
+    @apply flex-row-reverse;
+    @apply md:block;
+    @apply justify-between;
+}
+
+button#menu-toggle svg {
+    height: 48px;
+    width: 48px;
+}
+
 #theme-toggle svg {
     height: 18px;
+    width: 18px;
 }
 
 button#theme-toggle {
     font-size: 26px;
-    margin: auto 4px;
+    height: 18px;
+    width: 18px;
+    /* margin: auto 4px; */
 }
 
 body.dark #moon {

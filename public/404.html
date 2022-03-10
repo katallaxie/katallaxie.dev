@@ -4,11 +4,12 @@
     
     <meta name="viewport" content="width=device-width, initial-scale=1">
     
-    <link rel="stylesheet" href="https://katallaxie.me/css/styles.min.6bb9736e0e1175af57ca6f6385c0d5da45d431b840fc43716523ac86b9cd3af0.css" integrity="sha256-a7lzbg4Rda9Xym9jhcDV2kXUMbhA/ENxZSOshrnNOvA=">
+    <link rel="stylesheet" href="https://katallaxie.me/css/styles.min.7afd8275cbd789eadaeb1cb0004fbed7b817f08f22201c9c7f93452ace5d68a8.css" integrity="sha256-ev2CdcvXiera6xywAE++17gX8I8iIBycf5NFKs5daKg=">
     
     
     <title>Sebastian Döll | Senior Software Engineer | 404 Page not found</title>
 </head><body>
+    <div class="wrap">
 <script>
   if (localStorage.getItem("pref-theme") === "dark") {
     document.body.classList.add("dark");
@@ -19,35 +20,25 @@
   }
 </script>
 
-<header class="'header">
+<header class="header">
   <aside>
+    <button id="menu-toggle" aria-label="Open Menu">
+      <div class="w-full flex flex-row-reverse md:block justify-between"><svg xmlns="http://www.w3.org/2000/svg"
+          fill="none" viewBox="0 0 24 24" stroke="currentColor" class="h-10 m-3 md:m-0 bg-black">
+          <path stroke-linecap="square" stroke-linejoin="miter" stroke-width="1" d="M4 6h16M4 12h16M4 18h7"></path>
+        </svg>
+        <h2
+          class="transform-gpu hidden md:block md:-rotate-180 whitespace-nowrap text-3xl md:text-4xl py-6 font-semibold md:vertical-rl">
+          Say Hi.</h2>
+      </div>
+    </button>
     <button id="theme-toggle" accesskey="t" title="(Alt + T)">
-      <svg
-        id="moon"
-        xmlns="http://www.w3.org/2000/svg"
-        width="24"
-        height="24"
-        viewBox="0 0 24 24"
-        fill="none"
-        stroke="currentColor"
-        stroke-width="2"
-        stroke-linecap="round"
-        stroke-linejoin="round"
-      >
+      <svg id="moon" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"
+        stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
         <path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"></path>
       </svg>
-      <svg
-        id="sun"
-        xmlns="http://www.w3.org/2000/svg"
-        width="24"
-        height="24"
-        viewBox="0 0 24 24"
-        fill="none"
-        stroke="currentColor"
-        stroke-width="2"
-        stroke-linecap="round"
-        stroke-linejoin="round"
-      >
+      <svg id="sun" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"
+        stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
         <circle cx="12" cy="12" r="5"></circle>
         <line x1="12" y1="1" x2="12" y2="3"></line>
         <line x1="12" y1="21" x2="12" y2="23"></line>
@@ -61,8 +52,7 @@
     </button>
   </aside>
   <nav></nav>
-</header>
-<div id="content">
+</header><div class="content">
 <div class="not-found">404</div>
         </div>
 <script>
@@ -76,5 +66,7 @@
         }
     })
 
-</script></body>
+</script></div>
+</body>
+
 </html>

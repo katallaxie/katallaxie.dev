@@ -667,28 +667,16 @@ header {
   }
 }
 
-header {
+header aside {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: flex-start;
+}
 
-    aside {
-    width: 100%;
-  }
-
-    aside {
-    height: 100%;
-  }
-
-    aside {
-    display: flex;
-  }
-
-    aside {
-    justify-content: flex-start;
-  }
-
-    @media (min-width: 768px) {
-    aside {
-      justify-content: flex-end;
-    }
+@media (min-width: 768px) {
+  header aside {
+    justify-content: flex-end;
   }
 }
 
@@ -745,13 +733,37 @@ header {
   padding-right: 1.5rem;
 }
 
+button#menu-toggle div {
+  width: 100%;
+  display: flex;
+  flex-direction: row-reverse;
+}
+
+@media (min-width: 768px) {
+  button#menu-toggle div {
+    display: block;
+  }
+}
+
+button#menu-toggle div {
+  justify-content: space-between;
+}
+
+button#menu-toggle svg {
+    height: 48px;
+    width: 48px;
+}
+
 #theme-toggle svg {
     height: 18px;
+    width: 18px;
 }
 
 button#theme-toggle {
     font-size: 26px;
-    margin: auto 4px;
+    height: 18px;
+    width: 18px;
+    /* margin: auto 4px; */
 }
 
 body.dark #moon {
