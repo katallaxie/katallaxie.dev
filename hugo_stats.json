@@ -15,6 +15,9 @@
       "head",
       "header",
       "html",
+      "input",
+      "label",
+      "li",
       "line",
       "link",
       "meta",
@@ -24,12 +27,15 @@
       "script",
       "section",
       "svg",
-      "title"
+      "title",
+      "ul"
     ],
     "classes": [
       "-mt-3",
       "bg-black",
       "block",
+      "border-b",
+      "border-gray-700",
       "col-span-full",
       "content",
       "flex",
@@ -43,6 +49,7 @@
       "lg:col-span-10",
       "lg:pb-12",
       "lg:text-2xl",
+      "lg:text-3xl",
       "lg:text-4xl",
       "m-3",
       "main",
@@ -55,6 +62,8 @@
       "md:text-3xl",
       "md:w-24",
       "not-found",
+      "openSidebarMenu",
+      "p-6",
       "pb-8",
       "px-8",
       "py-12",
@@ -84,6 +93,7 @@
     "ids": [
       "menu-toggle",
       "moon",
+      "openSidebarMenu",
       "sun",
       "theme-toggle"
     ]

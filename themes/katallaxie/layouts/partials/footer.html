@@ -10,5 +10,12 @@
         }
     })
 
+    document.getElementById("menu-toggle").addEventListener("click", () => {
+        if (document.body.className.includes("open")) {
+            document.body.classList.remove('open');
+        } else {
+            document.body.classList.add('open');
+        }
+    })
 </script>
 {{- end }}
