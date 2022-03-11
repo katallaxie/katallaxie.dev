@@ -36,6 +36,8 @@
       "border-gray-700",
       "col-span-full",
       "content",
+      "content-2-col",
+      "content-3-col",
       "flex",
       "flex-col",
       "focus:outline-none",

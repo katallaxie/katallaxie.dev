@@ -634,6 +634,79 @@ body.dark {
   }
 }
 
+.content-2-col {
+  grid-column: 1 / -1;
+}
+
+@media (min-width: 1024px) {
+  .content-2-col {
+    grid-column: span 10 / span 10;
+  }
+}
+
+@media (min-width: 1280px) {
+  .content-2-col {
+    grid-column: span 4 / span 4;
+  }
+}
+
+.content-2-col {
+  padding-left: 2rem;
+  padding-right: 2rem;
+}
+
+@media (min-width: 768px) {
+  .content-2-col {
+    padding-top: 6rem;
+  }
+}
+
+.content-3-col {
+  grid-column: 1 / -1;
+}
+
+@media (min-width: 1024px) {
+  .content-3-col {
+    grid-column: span 10 / span 10;
+  }
+}
+
+@media (min-width: 1280px) {
+  .content-3-col {
+    border-left-width: 1px;
+  }
+  .content-3-col {
+    --tw-border-opacity: 1;
+    border-color: rgb(55 65 81 / var(--tw-border-opacity));
+  }
+  .content-3-col {
+    grid-column-start: 5;
+  }
+}
+
+.content-3-col {
+  padding-top: 3rem;
+  padding-bottom: 3rem;
+  padding-left: 2rem;
+  padding-right: 2rem;
+}
+
+@media (min-width: 1280px) {
+  .content-3-col {
+    padding-right: 3rem;
+  }
+  .content-3-col {
+    padding-top: 6rem;
+    padding-bottom: 6rem;
+  }
+  .content-3-col {
+    padding-left: 6rem;
+  }
+  .content-3-col {
+    grid-column: span 7 / span 7;
+  }
+}
+
 .main {
   display: grid;
   grid-template-columns: repeat(12, minmax(0, 1fr));

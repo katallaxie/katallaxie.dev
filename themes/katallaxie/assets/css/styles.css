@@ -116,6 +116,28 @@ body.dark {
     @apply md:overflow-x-hidden;
 }
 
+.content-2-col {
+   @apply col-span-full;
+   @apply lg:col-span-10;
+   @apply xl:col-span-4; 
+   @apply px-8;
+   @apply md:pt-24;
+}
+
+.content-3-col {
+    @apply col-span-full;
+    @apply lg:col-span-10;
+    @apply xl:border-l;
+    @apply xl:border-gray-700;
+    @apply xl:col-start-5;
+    @apply py-12;
+    @apply px-8;
+    @apply xl:pr-12;
+    @apply xl:py-24;
+    @apply xl:pl-24;
+    @apply xl:col-span-7;
+}
+
 .main {
     @apply grid;
     @apply grid-cols-12;
