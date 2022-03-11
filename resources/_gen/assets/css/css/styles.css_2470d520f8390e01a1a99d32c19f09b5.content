@@ -837,6 +837,47 @@ nav ul li a:hover {
   color: rgb(255 255 255 / var(--tw-text-opacity));
 }
 
+nav h2 {
+  transform: translate3d(var(--tw-translate-x), var(--tw-translate-y), 0) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
+  display: none;
+}
+
+@media (min-width: 768px) {
+  nav h2 {
+    display: block;
+  }
+  nav h2 {
+    --tw-rotate: -180deg;
+    transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
+  }
+}
+
+nav h2 {
+  white-space: nowrap;
+  font-size: 1.875rem;
+  line-height: 2.25rem;
+}
+
+@media (min-width: 768px) {
+  nav h2 {
+    font-size: 2.25rem;
+    line-height: 2.5rem;
+  }
+}
+
+nav h2 {
+  padding-top: 1.5rem;
+  padding-bottom: 1.5rem;
+  font-weight: 600;
+}
+
+@media (min-width: 768px) {
+      nav h2 {
+        -ms-writing-mode: tb-rl;
+            writing-mode: vertical-rl
+      }
+}
+
 body.open .wrap {
   left: 66.666667%;
 }

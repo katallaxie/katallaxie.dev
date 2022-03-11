@@ -93,6 +93,29 @@ body.dark {
     }
 }
 
+@layer utilities {
+    @variants responsive {
+      .scroll-snap-none {
+        scroll-snap-type: none;
+      }
+      .scroll-snap-x {
+        scroll-snap-type: x;
+      }
+      .scroll-snap-y {
+        scroll-snap-type: y;
+      }
+      .horizontal-tb {
+        writing-mode: horizontal-tb
+      }
+      .vertical-rl {
+        writing-mode: vertical-rl
+      }
+      .vertical-lr {
+        writing-mode: vertical-lr
+      }
+    }
+  }
+
 .wrap {
     @apply top-0;
     @apply left-0;
@@ -205,6 +228,19 @@ nav ul li a {
     @apply lg:text-3xl;
     @apply font-semibold;
     @apply hover:text-white;
+}
+
+nav h2 {
+    @apply transform-gpu;
+    @apply hidden;
+    @apply md:block;
+    @apply md:-rotate-180;
+    @apply whitespace-nowrap; 
+    @apply text-3xl;
+    @apply md:text-4xl;
+    @apply py-6;
+    @apply font-semibold;
+    @apply md:vertical-rl;
 }
 
 body.open .wrap {
