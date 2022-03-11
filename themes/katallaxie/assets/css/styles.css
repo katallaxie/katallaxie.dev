@@ -220,6 +220,15 @@ body.open nav {
     @apply lg:left-0;
 }
 
+body.open #open {
+    vertical-align: middle;
+    display: none;
+}
+
+body:not(.open) #close  {
+    display: none;
+}
+
 #theme-toggle svg {
     margin: auto;
 }

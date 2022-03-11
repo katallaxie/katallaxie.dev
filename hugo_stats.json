@@ -90,8 +90,10 @@
       "xl:py-24"
     ],
     "ids": [
+      "close",
       "menu-toggle",
       "moon",
+      "open",
       "sun",
       "theme-toggle"
     ]

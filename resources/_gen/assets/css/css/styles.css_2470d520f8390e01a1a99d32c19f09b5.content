@@ -868,6 +868,15 @@ body.open nav {
   }
 }
 
+body.open #open {
+    vertical-align: middle;
+    display: none;
+}
+
+body:not(.open) #close  {
+    display: none;
+}
+
 #theme-toggle svg {
     margin: auto;
 }
