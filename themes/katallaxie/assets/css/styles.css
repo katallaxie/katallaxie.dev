@@ -154,7 +154,6 @@ button#menu-toggle svg {
 
 nav {
     @apply fixed;
-    @apply bg-black;
     @apply top-0;
     @apply w-2/3;
     @apply lg:w-1/3;
@@ -169,6 +168,21 @@ nav {
     @apply border-r;
     @apply border-gray-700;
     @apply py-12;
+}
+
+nav ul li {
+    @apply border-b;
+    @apply border-gray-700;
+    @apply p-6;
+}
+
+nav ul li a {
+    @apply text-gray-500;
+    @apply text-xl;
+    @apply md:text-2xl;
+    @apply lg:text-3xl;
+    @apply font-semibold;
+    @apply hover:text-white;
 }
 
 body.open .wrap {

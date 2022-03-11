@@ -15,8 +15,6 @@
       "head",
       "header",
       "html",
-      "input",
-      "label",
       "li",
       "line",
       "link",
@@ -62,7 +60,6 @@
       "md:text-3xl",
       "md:w-24",
       "not-found",
-      "openSidebarMenu",
       "p-6",
       "pb-8",
       "px-8",
@@ -93,7 +90,6 @@
     "ids": [
       "menu-toggle",
       "moon",
-      "openSidebarMenu",
       "sun",
       "theme-toggle"
     ]
