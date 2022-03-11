@@ -671,98 +671,32 @@ header aside {
   width: 100%;
   height: 100%;
   display: flex;
+  flex-direction: column;
   justify-content: flex-start;
-}
-
-@media (min-width: 768px) {
-  header aside {
-    justify-content: flex-end;
-  }
-}
-
-#menu-toggle:focus {
-  outline: 2px solid transparent;
-  outline-offset: 2px;
+  align-items: flex-end;
 }
 
 #menu-toggle {
-  --tw-text-opacity: 1;
-  color: rgb(107 114 128 / var(--tw-text-opacity));
+   
 }
 
-#menu-toggle:hover {
-  --tw-text-opacity: 1;
-  color: rgb(255 255 255 / var(--tw-text-opacity));
-}
-
-#menu-toggle {
-  width: 100%;
-}
-
-@media (min-width: 768px) {
-  #menu-toggle {
-    width: -webkit-min-content;
-    width: -moz-min-content;
-    width: min-content;
-  }
-  #menu-toggle {
-    display: flex;
-  }
-}
-
-#menu-toggle {
-  height: 100%;
-}
-
-#menu-toggle:hover {
-  --tw-text-opacity: 1;
-  color: rgb(255 255 255 / var(--tw-text-opacity));
-}
-
-@media (min-width: 768px) {
-  #menu-toggle {
-    padding-top: 3rem;
-    padding-bottom: 3rem;
-  }
-}
-
-#menu-toggle {
-  padding-top: 1.5rem;
-  padding-bottom: 1.5rem;
-  padding-left: 1.5rem;
-  padding-right: 1.5rem;
-}
-
-button#menu-toggle div {
-  width: 100%;
-  display: flex;
-  flex-direction: row-reverse;
-}
-
-@media (min-width: 768px) {
-  button#menu-toggle div {
-    display: block;
-  }
-}
-
-button#menu-toggle div {
-  justify-content: space-between;
-}
-
-button#menu-toggle svg {
+button#menu-toggle {
     height: 48px;
     width: 48px;
 }
 
+button#menu-toggle svg {
+    margin: auto;
+}
+
 #theme-toggle svg {
-    height: 18px;
-    width: 18px;
+    margin: auto;
 }
 
 button#theme-toggle {
     font-size: 26px;
-    height: 18px;
-    width: 18px;
+    height: 48px;
+    width: 48px;
     /* margin: auto 4px; */
 }
 

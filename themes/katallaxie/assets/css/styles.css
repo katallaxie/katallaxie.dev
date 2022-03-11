@@ -134,46 +134,32 @@ header aside {
     @apply w-full;
     @apply h-full;
     @apply flex;
+    @apply flex-col;
     @apply justify-start;
-    @apply md:justify-end;
+    @apply items-end;
 }
 
 #menu-toggle {
-    @apply focus:outline-none;
-    @apply text-gray-500;
-    @apply hover:text-white; 
-    @apply w-full; 
-    @apply md:w-min;
-    @apply md:flex;
-    @apply h-full;
-    @apply hover:text-white;
-    @apply md:py-12;
-    @apply py-6;
-    @apply px-6;
+   
 }
 
-button#menu-toggle div {
-    @apply w-full;
-    @apply flex;
-    @apply flex-row-reverse;
-    @apply md:block;
-    @apply justify-between;
-}
-
-button#menu-toggle svg {
+button#menu-toggle {
     height: 48px;
     width: 48px;
 }
 
+button#menu-toggle svg {
+    margin: auto;
+}
+
 #theme-toggle svg {
-    height: 18px;
-    width: 18px;
+    margin: auto;
 }
 
 button#theme-toggle {
     font-size: 26px;
-    height: 18px;
-    width: 18px;
+    height: 48px;
+    width: 48px;
     /* margin: auto 4px; */
 }
 
