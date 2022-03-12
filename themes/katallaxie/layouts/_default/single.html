@@ -1,15 +1,7 @@
-<!DOCTYPE html>
-<html>
-{{- partial "head.html" . -}}
-
-<body>
-    <div class="wrap">
-        {{- partial "header.html" . -}}
-        <div class="content">
-            {{- block "main" . }}{{- end }}
-        </div>
-        {{- partial "footer.html" . -}}
+{{ define "main" }}
+<div class="main">
+    <div class="content-3-col">
+        {{ .Content }}
     </div>
-</body>
-
-</html>
+</div>
+{{ end }}
