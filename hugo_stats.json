@@ -2,6 +2,7 @@
   "htmlElements": {
     "tags": [
       "a",
+      "article",
       "aside",
       "body",
       "button",
@@ -9,6 +10,7 @@
       "div",
       "footer",
       "g",
+      "h1",
       "h2",
       "h3",
       "h4",
@@ -18,6 +20,7 @@
       "li",
       "line",
       "link",
+      "main",
       "meta",
       "nav",
       "p",
@@ -73,7 +76,6 @@
       "transform-gpu",
       "transition",
       "uppercase",
-      "vertical-rl",
       "w-20",
       "wrap",
       "xl:pt-24",
