@@ -18,4 +18,7 @@
     {{ $title := print .Site.Title " | " .Title }}
     {{ if .IsHome }}{{ $title = .Site.Title }}{{ end }}
     <title>{{ $title }}</title>
+
+    <link rel="preload" href="fonts/roboto-v29-latin-regular.woff2" as="font" type="font/woff2" crossorigin>
+    <link rel="preload" href="fonts/roboto-v29-latin-500.woff2" as="font" type="font/woff2" crossorigin>
 </head>
