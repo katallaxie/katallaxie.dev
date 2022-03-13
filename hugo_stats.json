@@ -41,6 +41,7 @@
       "brand",
       "col-span-full",
       "content",
+      "content-1-col",
       "content-2-col",
       "content-3-col",
       "flex",
@@ -69,12 +70,15 @@
       "py-16",
       "py-3",
       "py-6",
+      "single",
+      "tags",
       "teaser",
       "text-2xl",
       "text-3xl",
       "text-gray-500",
       "text-xl",
       "uppercase",
+      "v",
       "wrap",
       "xl:pt-24",
       "xl:py-0"
@@ -85,6 +89,7 @@
       "moon",
       "open",
       "sun",
+      "tags",
       "theme-toggle"
     ]
   }
