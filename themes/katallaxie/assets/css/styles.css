@@ -267,12 +267,15 @@ ul.latest time {
 }
 
 header {
-    @apply text-gray-500;
     @apply col-span-full;
     @apply md:col-span-2;
     @apply xl:col-span-1; 
     @apply md:border-r; 
     @apply md:border-gray-700;
+}
+
+header button {
+    @apply text-gray-500;
     @apply hover:text-white;
 }
 

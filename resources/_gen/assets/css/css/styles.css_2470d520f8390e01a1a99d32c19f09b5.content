@@ -912,8 +912,6 @@ ul.latest time {
 }
 
 header {
-  --tw-text-opacity: 1;
-  color: rgb(107 114 128 / var(--tw-text-opacity));
   grid-column: 1 / -1;
 }
 
@@ -939,7 +937,12 @@ header {
   }
 }
 
-header:hover {
+header button {
+  --tw-text-opacity: 1;
+  color: rgb(107 114 128 / var(--tw-text-opacity));
+}
+
+header button:hover {
   --tw-text-opacity: 1;
   color: rgb(255 255 255 / var(--tw-text-opacity));
 }
