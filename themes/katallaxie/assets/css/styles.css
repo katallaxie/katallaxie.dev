@@ -296,9 +296,9 @@ header .greeting {
     @apply whitespace-nowrap;
     @apply text-3xl;
     @apply md:text-4xl;
-    @apply py-6;
     @apply font-semibold;
     @apply md:vertical-lr;
+    @apply py-4;
 }
 
 .teaser > h4 {
@@ -322,12 +322,10 @@ header .greeting {
 }
 
 #menu-toggle {
-   
 }
 
 button#menu-toggle {
-    height: 48px;
-    width: 48px;
+    @apply p-4;
 }
 
 button#menu-toggle svg {
@@ -406,10 +404,11 @@ body:not(.open) #close  {
 }
 
 button#theme-toggle {
-    font-size: 26px;
-    height: 48px;
-    width: 48px;
-    /* margin: auto 4px; */
+    @apply m-4;
+    @apply p-2;
+    @apply text-3xl;
+    @apply md:text-4xl;
+    @apply font-semibold;
 }
 
 body.dark #moon {
