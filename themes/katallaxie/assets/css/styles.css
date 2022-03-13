@@ -134,13 +134,13 @@ body.dark {
         scroll-snap-type: y;
       }
       .horizontal-tb {
-        writing-mode: horizontal-tb
+        writing-mode: horizontal-tb;
       }
       .vertical-rl {
-        writing-mode: vertical-rl
+        writing-mode: vertical-rl;
       }
       .vertical-lr {
-        writing-mode: vertical-lr
+        writing-mode: vertical-lr;
       }
     }
   }
@@ -286,6 +286,19 @@ header aside {
     @apply flex-col;
     @apply justify-start;
     @apply items-end;
+}
+
+header .greeting {
+    @apply transform-gpu;
+    @apply hidden;
+    @apply md:block;
+    @apply md:-rotate-180;
+    @apply whitespace-nowrap;
+    @apply text-3xl;
+    @apply md:text-4xl;
+    @apply py-6;
+    @apply font-semibold;
+    @apply md:vertical-lr;
 }
 
 .teaser > h4 {

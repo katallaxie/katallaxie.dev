@@ -956,6 +956,47 @@ header aside {
   align-items: flex-end;
 }
 
+header .greeting {
+  transform: translate3d(var(--tw-translate-x), var(--tw-translate-y), 0) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
+  display: none;
+}
+
+@media (min-width: 768px) {
+  header .greeting {
+    display: block;
+  }
+  header .greeting {
+    --tw-rotate: -180deg;
+    transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
+  }
+}
+
+header .greeting {
+  white-space: nowrap;
+  font-size: 1.875rem;
+  line-height: 2.25rem;
+}
+
+@media (min-width: 768px) {
+  header .greeting {
+    font-size: 2.25rem;
+    line-height: 2.5rem;
+  }
+}
+
+header .greeting {
+  padding-top: 1.5rem;
+  padding-bottom: 1.5rem;
+  font-weight: 600;
+}
+
+@media (min-width: 768px) {
+      header .greeting {
+        -ms-writing-mode: tb-lr;
+            writing-mode: vertical-lr;
+      }
+}
+
 .teaser > h4 {
   font-size: 1.25rem;
   line-height: 1.75rem;

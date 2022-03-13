@@ -35,6 +35,7 @@
     ],
     "classes": [
       "-mt-3",
+      ".vertical-lr",
       "bg-black",
       "block",
       "border-b",
@@ -49,6 +50,7 @@
       "flex-col",
       "focus:outline-none",
       "font-semibold",
+      "greeting",
       "h-10",
       "header",
       "highlight",
@@ -66,6 +68,7 @@
       "md:text-2xl",
       "md:text-3xl",
       "md:vertical-lr",
+      "md:vertical-rl",
       "not-found",
       "p-6",
       "pb-8",
@@ -80,6 +83,8 @@
       "text-gray-500",
       "text-xl",
       "uppercase",
+      "vertical-lr",
+      "vertical-rl",
       "wrap",
       "xl:pt-24",
       "xl:py-0"
