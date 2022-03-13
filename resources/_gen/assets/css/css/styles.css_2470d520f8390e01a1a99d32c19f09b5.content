@@ -912,6 +912,8 @@ ul.latest time {
 }
 
 header {
+  --tw-text-opacity: 1;
+  color: rgb(107 114 128 / var(--tw-text-opacity));
   grid-column: 1 / -1;
 }
 
@@ -935,6 +937,11 @@ header {
     --tw-border-opacity: 1;
     border-color: rgb(55 65 81 / var(--tw-border-opacity));
   }
+}
+
+header:hover {
+  --tw-text-opacity: 1;
+  color: rgb(255 255 255 / var(--tw-text-opacity));
 }
 
 header aside {
@@ -1114,8 +1121,6 @@ nav h2 {
   padding-top: 1.5rem;
   padding-bottom: 1.5rem;
   font-weight: 600;
-
-    background-color: red;
 }
 
 body.open .wrap {

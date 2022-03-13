@@ -267,11 +267,13 @@ ul.latest time {
 }
 
 header {
+    @apply text-gray-500;
     @apply col-span-full;
     @apply md:col-span-2;
     @apply xl:col-span-1; 
     @apply md:border-r; 
     @apply md:border-gray-700;
+    @apply hover:text-white;
 }
 
 header aside {
@@ -359,8 +361,6 @@ nav h2 {
     @apply md:text-4xl;
     @apply py-6;
     @apply font-semibold;
-
-    background-color: red;
 }
 
 body.open .wrap {
