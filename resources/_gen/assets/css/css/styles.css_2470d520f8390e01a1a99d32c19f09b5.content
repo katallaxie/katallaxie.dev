@@ -708,6 +708,78 @@ body.dark {
   color: rgb(107 114 128 / var(--tw-text-opacity));
 }
 
+ul.latest h3 {
+  font-size: 1.5rem;
+  line-height: 2rem;
+}
+
+@media (min-width: 768px) {
+  ul.latest h3 {
+    font-size: 1.875rem;
+    line-height: 2.25rem;
+  }
+}
+
+ul.latest h3 {
+  padding-top: 0.75rem;
+  padding-bottom: 0.75rem;
+}
+
+@media (min-width: 768px) {
+  ul.latest h3 {
+    padding-top: 1.5rem;
+    padding-bottom: 1.5rem;
+  }
+}
+
+ul.latest > li {
+  padding-top: 0.75rem;
+  padding-bottom: 0.75rem;
+}
+
+@media (min-width: 1280px) {
+  ul.latest > li {
+    padding-top: 0px;
+    padding-bottom: 0px;
+  }
+}
+
+ul.latest time {
+  font-size: 1.5rem;
+  line-height: 2rem;
+}
+
+@media (min-width: 768px) {
+  ul.latest time {
+    font-size: 1.875rem;
+    line-height: 2.25rem;
+  }
+}
+
+ul.latest time {
+  padding-top: 0.75rem;
+  padding-bottom: 0.75rem;
+}
+
+@media (min-width: 768px) {
+  ul.latest time {
+    padding-top: 1.5rem;
+    padding-bottom: 1.5rem;
+  }
+}
+
+ul.latest time {
+  --tw-text-opacity: 1;
+  color: rgb(107 114 128 / var(--tw-text-opacity));
+  margin-top: -0.75rem;
+}
+
+@media (min-width: 768px) {
+  ul.latest time {
+    margin-top: -2rem;
+  }
+}
+
 .content-3-col {
   grid-column: 1 / -1;
 }

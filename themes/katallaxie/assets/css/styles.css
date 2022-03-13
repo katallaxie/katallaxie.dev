@@ -183,6 +183,28 @@ body.dark {
     @apply text-gray-500;
 }
 
+ul.latest h3 {
+    @apply text-2xl;
+    @apply md:text-3xl;
+    @apply py-3;
+    @apply md:py-6;
+}
+
+ul.latest > li {
+    @apply py-3;
+    @apply xl:py-0;
+}
+
+ul.latest time {
+    @apply text-2xl;
+    @apply md:text-3xl;
+    @apply py-3;
+    @apply md:py-6;
+    @apply text-gray-500;
+    @apply -mt-3;
+    @apply md:-mt-8;
+}
+
 .content-3-col {
     @apply col-span-full;
     @apply lg:col-span-10;

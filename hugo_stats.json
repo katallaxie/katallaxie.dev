@@ -50,6 +50,7 @@
       "h-10",
       "header",
       "hover:text-white",
+      "latest",
       "lg:pb-12",
       "lg:text-2xl",
       "lg:text-3xl",
