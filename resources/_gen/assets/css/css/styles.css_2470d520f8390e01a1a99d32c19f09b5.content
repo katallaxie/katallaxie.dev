@@ -661,6 +661,25 @@ body.dark {
   }
 }
 
+.content section > h2 {
+  font-size: 1.875rem;
+  line-height: 2.25rem;
+}
+
+@media (min-width: 1024px) {
+  .content section > h2 {
+    font-size: 2.25rem;
+    line-height: 2.5rem;
+  }
+}
+
+.content section > h2 {
+  padding-top: 1.5rem;
+  padding-bottom: 1.5rem;
+  --tw-text-opacity: 1;
+  color: rgb(107 114 128 / var(--tw-text-opacity));
+}
+
 .content-3-col {
   grid-column: 1 / -1;
 }
@@ -747,6 +766,54 @@ header aside {
   flex-direction: column;
   justify-content: flex-start;
   align-items: flex-end;
+}
+
+.teaser > h4 {
+  font-size: 1.25rem;
+  line-height: 1.75rem;
+}
+
+@media (min-width: 768px) {
+  .teaser > h4 {
+    font-size: 1.5rem;
+    line-height: 2rem;
+  }
+}
+
+.teaser > h4 {
+  padding-top: 1.5rem;
+  padding-bottom: 1.5rem;
+}
+
+.brand {
+  padding-bottom: 2rem;
+}
+
+@media (min-width: 768px) {
+  .brand {
+    padding-bottom: 3rem;
+  }
+}
+
+.brand > a {
+  width: 5rem;
+}
+
+@media (min-width: 768px) {
+  .brand > a {
+    width: 6rem;
+  }
+}
+
+.brand > a {
+  display: block;
+  height: 100%;
+  transition-property: color, background-color, border-color, fill, stroke, opacity, box-shadow, transform, filter, -webkit-text-decoration-color, -webkit-backdrop-filter;
+  transition-property: color, background-color, border-color, text-decoration-color, fill, stroke, opacity, box-shadow, transform, filter, backdrop-filter;
+  transition-property: color, background-color, border-color, text-decoration-color, fill, stroke, opacity, box-shadow, transform, filter, backdrop-filter, -webkit-text-decoration-color, -webkit-backdrop-filter;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  transition-duration: 150ms;
+  transform: translate3d(var(--tw-translate-x), var(--tw-translate-y), 0) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
 }
 
 #menu-toggle {
@@ -869,13 +936,8 @@ nav h2 {
   padding-top: 1.5rem;
   padding-bottom: 1.5rem;
   font-weight: 600;
-}
 
-@media (min-width: 768px) {
-      nav h2 {
-        -ms-writing-mode: tb-rl;
-            writing-mode: vertical-rl
-      }
+    background-color: red;
 }
 
 body.open .wrap {

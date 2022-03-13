@@ -147,6 +147,13 @@ body.dark {
    @apply md:pt-24;
 }
 
+.content section > h2 {
+    @apply text-3xl;
+    @apply lg:text-4xl;
+    @apply py-6;
+    @apply text-gray-500;
+}
+
 .content-3-col {
     @apply col-span-full;
     @apply lg:col-span-10;
@@ -182,6 +189,26 @@ header aside {
     @apply flex-col;
     @apply justify-start;
     @apply items-end;
+}
+
+.teaser > h4 {
+    @apply text-xl;
+    @apply md:text-2xl;
+    @apply py-6;
+}
+
+.brand {
+    @apply pb-8;
+    @apply md:pb-12;
+}
+
+.brand > a {
+    @apply w-20;
+    @apply md:w-24; 
+    @apply block;
+    @apply h-full;
+    @apply transition;
+    @apply transform-gpu;
 }
 
 #menu-toggle {
@@ -240,7 +267,8 @@ nav h2 {
     @apply md:text-4xl;
     @apply py-6;
     @apply font-semibold;
-    @apply md:vertical-rl;
+
+    background-color: red;
 }
 
 body.open .wrap {
