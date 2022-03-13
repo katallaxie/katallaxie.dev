@@ -6,3 +6,7 @@ theme = 'katallaxie'
 
 [build]
   writeStats = true
+
+[markup]
+  [markup.highlight]
+    style = 'vim'
