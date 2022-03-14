@@ -1,0 +1,30 @@
+{{ define "main" }}
+<div class="main single">
+    <div class="content-1-col">
+        <div class="brand">
+            <a class="" aria-label="Home" href="/">
+              <svg viewBox="0 0 84 24">
+                <g fill="none" fill-rule="evenodd">
+                  <circle fill="#FFCA09" cx="12" cy="12" r="12"></circle>
+                  <path fill="#3077F8" d="M41 0l12 24H29z"></path>
+                  <path fill="#E51D1D" d="M60 0h24v24H60z"></path>
+                </g>
+              </svg>
+            </a>
+          </div>
+        <h1>{{ .Title }}</h1>
+        <aside>
+            {{ with .Params.tags }}
+            <ul class="tags">
+            {{ range . }}
+                <li>
+                    <a href="{{ "tags" | absURL }}{{ . | urlize }}"># {{ . }}</a>
+                </li>
+            {{ end }}
+            </ul>
+            {{ end }}
+        </aside>
+        <main>{{ .Content }}</main>>
+    </div>
+</div>
+{{ end }}
