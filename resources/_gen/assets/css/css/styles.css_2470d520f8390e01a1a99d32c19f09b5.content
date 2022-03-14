@@ -956,9 +956,30 @@ header aside {
   width: 100%;
   height: 100%;
   display: flex;
-  flex-direction: column;
-  justify-content: flex-start;
+  flex-direction: row;
+  justify-content: flex-end;
   align-items: flex-end;
+}
+
+@media (min-width: 768px) {
+  header aside {
+    flex-direction: column;
+  }
+  header aside {
+    justify-content: flex-start;
+  }
+}
+
+header aside {
+  padding-left: 1rem;
+  padding-right: 1rem;
+}
+
+@media (min-width: 768px) {
+  header aside {
+    padding-left: 0px;
+    padding-right: 0px;
+  }
 }
 
 header .greeting {
