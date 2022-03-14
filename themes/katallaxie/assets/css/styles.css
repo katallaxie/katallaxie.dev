@@ -279,6 +279,10 @@ header button {
     @apply hover:text-white;
 }
 
+body:not(.dark) header button {
+    @apply hover:text-gray-700;
+}
+
 header aside {
     @apply w-full;
     @apply h-full;
