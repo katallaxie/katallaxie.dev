@@ -361,7 +361,6 @@ nav {
 nav ul li {
     @apply border-b;
     @apply border-gray-700;
-    @apply p-6;
 }
 
 nav ul li a {
@@ -371,6 +370,8 @@ nav ul li a {
     @apply lg:text-3xl;
     @apply font-semibold;
     @apply hover:text-white;
+    @apply p-6;
+    @apply w-full;
 }
 
 nav h2 {

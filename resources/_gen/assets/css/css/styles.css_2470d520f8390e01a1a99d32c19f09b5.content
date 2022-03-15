@@ -1127,7 +1127,6 @@ nav ul li {
   border-bottom-width: 1px;
   --tw-border-opacity: 1;
   border-color: rgb(55 65 81 / var(--tw-border-opacity));
-  padding: 1.5rem;
 }
 
 nav ul li a {
@@ -1158,6 +1157,11 @@ nav ul li a {
 nav ul li a:hover {
   --tw-text-opacity: 1;
   color: rgb(255 255 255 / var(--tw-text-opacity));
+}
+
+nav ul li a {
+  padding: 1.5rem;
+  width: 100%;
 }
 
 nav h2 {
