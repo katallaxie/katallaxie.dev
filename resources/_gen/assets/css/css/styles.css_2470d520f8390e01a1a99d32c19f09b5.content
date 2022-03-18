@@ -1055,8 +1055,8 @@ footer {
 .main .teaser > h4 {
   padding-top: 2rem;
   padding-bottom: 2rem;
-  --tw-text-opacity: 1;
-  color: rgb(255 255 255 / var(--tw-text-opacity));
+    
+    color: var(--text);
 }
 
 .main .teaser a {
@@ -1298,6 +1298,13 @@ body:not(.dark) #sun {
     display: none;
 }
 
+body:not(.dark) .main .teaser > h4 {
+  padding-top: 2rem;
+  padding-bottom: 2rem;
+  --tw-text-opacity: 1;
+  color: rgb(0 0 0 / var(--tw-text-opacity));
+}
+
 button#back {
   display: flex;
   flex-direction: column;
@@ -1422,6 +1429,8 @@ button#back {
   border-left-width: 8px;
   border-right-width: 8px;
   border-top-width: 8px;
+  --tw-border-opacity: 1;
+  border-left-color: rgb(107 114 128 / var(--tw-border-opacity));
   transition-property: all;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
   transition-duration: 150ms;
@@ -1437,8 +1446,7 @@ button#back {
 }
 
 .accordion input:checked + label h4 {
-  --tw-text-opacity: 1;
-  color: rgb(255 255 255 / var(--tw-text-opacity));
+    color: var(--text);
 }
 
 .accordion input ~ div {

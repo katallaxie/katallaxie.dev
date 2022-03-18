@@ -1,7 +1,7 @@
 projects:
   - name: Dart Runtime for AWS Lambda
     description: A custom runtime for AWS Lambda to run Dart programs serverless.
-    url:
+    url: https://github.com/awslabs/aws-lambda-dart-runtime
   - name: Fiber Fragments
     description: 🖼️ Micro fragmentation middleware for fiber 🚀 that enables to build microservice frontends.
     url: https://github.com/github/fiber-fragments

@@ -20,6 +20,7 @@
       "head",
       "header",
       "html",
+      "img",
       "input",
       "label",
       "li",
@@ -84,6 +85,7 @@
       "xl:py-0"
     ],
     "ids": [
+      "a-primer-of-modules",
       "about",
       "back",
       "client-server",
@@ -95,6 +97,7 @@
       "context+technologies",
       "dynamic-interpretation",
       "dynamic-libraries-with-symbol-resolution",
+      "importing-modules",
       "menu-toggle",
       "moon",
       "open",

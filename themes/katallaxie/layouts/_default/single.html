@@ -25,7 +25,11 @@
             </ul>
             {{ end }}
         </aside>
-        <main>{{ .Content }}</main>>
+        <main>
+          {{ .Content }}
+        </main>
+
+        {{- partial "bottom.html" . -}}
     </div>
 </div>
 {{ end }}
