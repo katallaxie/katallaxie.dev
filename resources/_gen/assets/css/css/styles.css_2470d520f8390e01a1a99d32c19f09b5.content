@@ -1026,6 +1026,22 @@ header .greeting {
   padding-bottom: 1rem;
 }
 
+footer {
+  padding-top: 4rem;
+  padding-bottom: 4rem;
+}
+
+@media (min-width: 1280px) {
+  footer {
+    padding-top: 6rem;
+  }
+}
+
+footer {
+  --tw-text-opacity: 1;
+  color: rgb(107 114 128 / var(--tw-text-opacity));
+}
+
 .teaser > h4 {
   font-size: 1.25rem;
   line-height: 1.75rem;
@@ -1270,6 +1286,35 @@ body.dark #moon {
 
 body:not(.dark) #sun {
     display: none;
+}
+
+button#back {
+  display: flex;
+  flex-direction: column;
+}
+
+button#back:focus {
+  outline: 2px solid transparent;
+  outline-offset: 2px;
+}
+
+button#back {
+  font-size: 1.875rem;
+  line-height: 2.25rem;
+}
+
+@media (min-width: 1024px) {
+  button#back {
+    font-size: 2.25rem;
+    line-height: 2.5rem;
+  }
+}
+
+button#back {
+  padding-top: 1.5rem;
+  padding-bottom: 1.5rem;
+  text-transform: uppercase;
+  font-weight: 600;
 }
 
 .skills {
