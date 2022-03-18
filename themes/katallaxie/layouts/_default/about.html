@@ -27,13 +27,11 @@
                     <div></div>
                 </label>
                 <div class="atoms">
-                    <div class="py-6">
-                        <div class="grid grid-cols-2 gap-4">
-                            {{ range $skill.Skills }}
-                            <div>{{ . }}</div>
-                            {{ end }}
-                        </div>
-                    </div>
+                    <ul>
+                        {{ range $skill.Skills }}
+                        <li>{{ . }}</li>
+                        {{ end }}
+                    </ul>
                 </div>
             </div>
             {{ end }}

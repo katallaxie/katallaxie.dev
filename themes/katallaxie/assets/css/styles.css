@@ -448,6 +448,16 @@ body:not(.dark) #sun {
     @apply max-h-screen;
 }
 
+.accordion .atoms ul {
+    @apply py-6;
+}
+
+.accordion .atoms li {
+    @apply grid;
+    @apply grid-cols-2;
+    @apply gap-4;
+}
+
 .accordion input {
     @apply absolute;
     @apply opacity-0;
@@ -459,10 +469,12 @@ body:not(.dark) #sun {
     @apply cursor-pointer;
     @apply border-t;
     @apply border-gray-500;
-    @apply border-b;
-    @apply border-gray-500;
     @apply hover:text-white;
     @apply text-white;
+}
+
+.accordion input:checked + label {
+    @apply border-b;
 }
 
 .accordion label h4 {

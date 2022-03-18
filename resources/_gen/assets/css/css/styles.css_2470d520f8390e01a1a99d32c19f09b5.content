@@ -1305,6 +1305,17 @@ body:not(.dark) #sun {
   max-height: 100vh;
 }
 
+.accordion .atoms ul {
+  padding-top: 1.5rem;
+  padding-bottom: 1.5rem;
+}
+
+.accordion .atoms li {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 1rem;
+}
+
 .accordion input {
   position: absolute;
   opacity: 0;
@@ -1315,7 +1326,6 @@ body:not(.dark) #sun {
   align-items: center;
   cursor: pointer;
   border-top-width: 1px;
-  border-bottom-width: 1px;
   --tw-border-opacity: 1;
   border-color: rgb(107 114 128 / var(--tw-border-opacity));
 }
@@ -1328,6 +1338,10 @@ body:not(.dark) #sun {
 .accordion input + label {
   --tw-text-opacity: 1;
   color: rgb(255 255 255 / var(--tw-text-opacity));
+}
+
+.accordion input:checked + label {
+  border-bottom-width: 1px;
 }
 
 .accordion label h4 {
