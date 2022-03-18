@@ -25,6 +25,7 @@
       "main",
       "meta",
       "nav",
+      "ol",
       "p",
       "path",
       "pre",
@@ -84,10 +85,14 @@
       "xl:py-0"
     ],
     "ids": [
+      "client-server",
       "close",
+      "dynamic-interpretation",
+      "dynamic-libraries-with-symbol-resolution",
       "menu-toggle",
       "moon",
       "open",
+      "stdin-to-stdout",
       "sun",
       "theme-toggle"
     ]

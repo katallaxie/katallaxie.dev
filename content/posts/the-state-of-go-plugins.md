@@ -1,5 +1,5 @@
 ---
-title: "The Stete of Go Plugins"
+title: "The State of Go Plugins"
 date: "2021-03-24"
 draft: false
 tags: ["go"]
