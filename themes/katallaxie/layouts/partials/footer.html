@@ -17,5 +17,8 @@
             document.body.classList.add('open');
         }
     })
+    document.getElementById("back").addEventListener("click", () => {
+        document.getElementById('top').scrollTo({ top: 0, behavior: 'smooth' });
+    })
 </script>
 {{- end }}

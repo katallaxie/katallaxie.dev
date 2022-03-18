@@ -46,6 +46,8 @@
             <li>{{ .company.name }}<span>{{ .title }}</span></li>
             {{ end }}
         </ul>
+
+        {{- partial "bottom.html" . -}}
     </div>
 </div>
 {{ end }}
