@@ -689,6 +689,16 @@ body.dark {
   }
 }
 
+.content section {
+  padding-bottom: 2rem;
+}
+
+@media (min-width: 1024px) {
+  .content section {
+    padding-bottom: 3rem;
+  }
+}
+
 .content section > h2 {
   font-size: 1.875rem;
   line-height: 2.25rem;
@@ -1329,7 +1339,7 @@ button#back {
   }
 }
 
-.accordion > div {
+.main .accordion > div {
   overflow: clip;
 }
 
@@ -1401,6 +1411,7 @@ button#back {
 .accordion label h4 {
   padding-top: 1.5rem;
   padding-bottom: 1.5rem;
+  margin-top: 0px;
   flex-grow: 1;
 }
 
@@ -1423,6 +1434,11 @@ button#back {
 .accordion input:checked + label h4 + div {
   --tw-rotate: 180deg;
   transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
+}
+
+.accordion input:checked + label h4 {
+  --tw-text-opacity: 1;
+  color: rgb(255 255 255 / var(--tw-text-opacity));
 }
 
 .accordion input ~ div {

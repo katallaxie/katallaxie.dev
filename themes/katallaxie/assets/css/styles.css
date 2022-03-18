@@ -176,6 +176,11 @@ body.dark {
    @apply md:pt-24;
 }
 
+.content section {
+    @apply pb-8;
+    @apply lg:pb-12;
+}
+
 .content section > h2 {
     @apply text-3xl;
     @apply lg:text-4xl;
@@ -458,7 +463,7 @@ button#back {
     @apply md:py-12;
 }
 
-.accordion > div {
+.main .accordion > div {
     @apply overflow-clip;
 }
 
@@ -499,7 +504,7 @@ button#back {
     @apply text-xl;
     @apply md:text-2xl;
     @apply py-6;
-    @apply py-6;
+    @apply mt-0;
     @apply flex-grow;
 }
 
@@ -519,6 +524,10 @@ button#back {
 
 .accordion input:checked + label h4 + div {
     @apply rotate-180;
+}
+
+.accordion input:checked + label h4 {
+    @apply text-white;
 }
 
 .accordion input ~ div {
