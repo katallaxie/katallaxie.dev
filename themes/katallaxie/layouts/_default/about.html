@@ -1,0 +1,48 @@
+{{ define "main" }}
+<div class="main">
+    <div class="content-2-col">
+        <div class="brand">
+            <a class="" aria-label="Home" href="/">
+                <svg viewBox="0 0 84 24">
+                    <g fill="none" fill-rule="evenodd">
+                        <circle fill="#FFCA09" cx="12" cy="12" r="12"></circle>
+                        <path fill="#3077F8" d="M41 0l12 24H29z"></path>
+                        <path fill="#E51D1D" d="M60 0h24v24H60z"></path>
+                    </g>
+                </svg>
+            </a>
+        </div>
+        <div class="teaser">
+            <h4>
+                Sebastian Döll is a Berlin based senior software engineer at Microsoft.
+                Crafting software with great user experiences.
+            </h4>
+        </div>
+        <div class="skills">
+            {{ range $.Site.Data.skills }}
+            <div class="overflow-hidden">
+                <input class="absolute opacity-0" id="context+0" name="context" type="radio"><label
+                    class="flex items-center cursor-pointer border-t border-gray-500 border-b border-gray-500 hover:text-white text-white"
+                    for="context+0">
+                    <h4 class="text-xl md:text-2xl py-6 py-6 flex-grow">{{ .Name }}</h4>
+                    <div class="transform-gpu w-0 h-0 border-l-8 border-r-8 border-t-8 transition-all border-transparent border-solid rotate-180"
+                        style="border-top: 8px solid;"></div>
+                </label>
+                <div class="overflow-hidden text-xl md:text-2xl max-h-screen">
+                    <div class="py-6">
+                        <div class="grid grid-cols-2 gap-4">
+                            {{ range .Skills }}
+                            <div>{{ . }}</div>
+                            {{ end }}
+                        </div>
+                    </div>
+                </div>
+            </div>
+            {{ end }}
+        </div>
+    </div>
+    <div class="content-3-col">
+        {{ .Content }}
+    </div>
+</div>
+{{ end }}

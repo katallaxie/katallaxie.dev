@@ -431,3 +431,8 @@ body.dark #moon {
 body:not(.dark) #sun {
     display: none;
 }
+
+.skills {
+    @apply py-8;
+    @apply md:py-12;
+}
