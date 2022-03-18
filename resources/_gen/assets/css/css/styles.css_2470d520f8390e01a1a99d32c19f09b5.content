@@ -1283,3 +1283,96 @@ body:not(.dark) #sun {
     padding-bottom: 3rem;
   }
 }
+
+.accordion > div {
+  overflow: clip;
+}
+
+.accordion .atoms {
+  overflow: clip;
+  font-size: 1.25rem;
+  line-height: 1.75rem;
+}
+
+@media (min-width: 768px) {
+  .accordion .atoms {
+    font-size: 1.5rem;
+    line-height: 2rem;
+  }
+}
+
+.accordion .atoms {
+  max-height: 100vh;
+}
+
+.accordion input {
+  position: absolute;
+  opacity: 0;
+}
+
+.accordion input + label {
+  display: flex;
+  align-items: center;
+  cursor: pointer;
+  border-top-width: 1px;
+  border-bottom-width: 1px;
+  --tw-border-opacity: 1;
+  border-color: rgb(107 114 128 / var(--tw-border-opacity));
+}
+
+.accordion input + label:hover {
+  --tw-text-opacity: 1;
+  color: rgb(255 255 255 / var(--tw-text-opacity));
+}
+
+.accordion input + label {
+  --tw-text-opacity: 1;
+  color: rgb(255 255 255 / var(--tw-text-opacity));
+}
+
+.accordion label h4 {
+  font-size: 1.25rem;
+  line-height: 1.75rem;
+}
+
+@media (min-width: 768px) {
+  .accordion label h4 {
+    font-size: 1.5rem;
+    line-height: 2rem;
+  }
+}
+
+.accordion label h4 {
+  padding-top: 1.5rem;
+  padding-bottom: 1.5rem;
+  flex-grow: 1;
+}
+
+.accordion label h4 + div {
+  transform: translate3d(var(--tw-translate-x), var(--tw-translate-y), 0) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
+  width: 0px;
+  height: 0px;
+  border-left-width: 8px;
+  border-right-width: 8px;
+  border-top-width: 8px;
+  transition-property: all;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  transition-duration: 150ms;
+  border-color: transparent;
+  border-style: solid;
+
+    border-top: 8px solid;
+}
+
+.accordion input:checked + label h4 + div {
+  --tw-rotate: 180deg;
+  transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
+}
+
+.accordion input ~ div {
+    display: none;
+}
+
+.accordion input:checked ~ div {
+    display: block;
+}

@@ -436,3 +436,65 @@ body:not(.dark) #sun {
     @apply py-8;
     @apply md:py-12;
 }
+
+.accordion > div {
+    @apply overflow-clip;
+}
+
+.accordion .atoms {
+    @apply overflow-clip;
+    @apply text-xl;
+    @apply md:text-2xl;
+    @apply max-h-screen;
+}
+
+.accordion input {
+    @apply absolute;
+    @apply opacity-0;
+}
+
+.accordion input + label {
+    @apply flex;
+    @apply items-center;
+    @apply cursor-pointer;
+    @apply border-t;
+    @apply border-gray-500;
+    @apply border-b;
+    @apply border-gray-500;
+    @apply hover:text-white;
+    @apply text-white;
+}
+
+.accordion label h4 {
+    @apply text-xl;
+    @apply md:text-2xl;
+    @apply py-6;
+    @apply py-6;
+    @apply flex-grow;
+}
+
+.accordion label h4 + div {
+    @apply transform-gpu;
+    @apply w-0;
+    @apply h-0;
+    @apply border-l-8;
+    @apply border-r-8; 
+    @apply border-t-8;
+    @apply transition-all;
+    @apply border-transparent;
+    @apply border-solid;
+
+    border-top: 8px solid;
+}
+
+.accordion input:checked + label h4 + div {
+    @apply rotate-180;
+}
+
+.accordion input ~ div {
+    display: none;
+}
+
+.accordion input:checked ~ div {
+    display: block;
+}

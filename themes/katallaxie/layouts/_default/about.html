@@ -18,20 +18,18 @@
                 Crafting software with great user experiences.
             </h4>
         </div>
-        <div class="skills">
-            {{ range $.Site.Data.skills }}
-            <div class="overflow-hidden">
-                <input class="absolute opacity-0" id="context+0" name="context" type="radio"><label
-                    class="flex items-center cursor-pointer border-t border-gray-500 border-b border-gray-500 hover:text-white text-white"
-                    for="context+0">
-                    <h4 class="text-xl md:text-2xl py-6 py-6 flex-grow">{{ .Name }}</h4>
-                    <div class="transform-gpu w-0 h-0 border-l-8 border-r-8 border-t-8 transition-all border-transparent border-solid rotate-180"
-                        style="border-top: 8px solid;"></div>
+        <div class="skills accordion">
+            {{ range $index, $skill := $.Site.Data.skills }}
+            <div>
+                <input id="context+{{ $index }}" name="context" type="radio">
+                <label for="context+{{ $index }}">
+                    <h4 class="">{{ $skill.Name }}</h4>
+                    <div></div>
                 </label>
-                <div class="overflow-hidden text-xl md:text-2xl max-h-screen">
+                <div class="atoms">
                     <div class="py-6">
                         <div class="grid grid-cols-2 gap-4">
-                            {{ range .Skills }}
+                            {{ range $skill.Skills }}
                             <div>{{ . }}</div>
                             {{ end }}
                         </div>
