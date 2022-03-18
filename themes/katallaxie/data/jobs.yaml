@@ -1,0 +1,31 @@
+jobs:
+  - title: Senior Software Engineer
+    company:
+      name: Microsoft
+    location:
+      name: Berlin
+  - title: Solutions Architect
+    company:
+      name: Amazon Web Services
+    location:
+      name: Berlin
+  - title: Senior Software Engineer
+    company:
+      name: DigitalOcean
+    location:
+      name: Berlin
+  - title: Axel Springer
+    company:
+      name: Lead Engineer
+    location:
+      name: Berlin
+  - title: Accenture
+    company:
+      name: Technical Lead
+    location:
+      name: Duesseldorf
+  - title: FSU Jena
+    company:
+      name: Research Fellow
+    location:
+      name: Jena

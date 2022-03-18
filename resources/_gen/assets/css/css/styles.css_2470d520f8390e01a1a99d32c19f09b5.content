@@ -1308,9 +1308,6 @@ body:not(.dark) #sun {
 .accordion .atoms ul {
   padding-top: 1.5rem;
   padding-bottom: 1.5rem;
-}
-
-.accordion .atoms li {
   display: grid;
   grid-template-columns: repeat(2, minmax(0, 1fr));
   gap: 1rem;
@@ -1389,4 +1386,111 @@ body:not(.dark) #sun {
 
 .accordion input:checked ~ div {
     display: block;
+}
+
+ul.experience {
+  grid-column: 1 / -1;
+}
+
+@media (min-width: 768px) {
+  ul.experience {
+    display: grid;
+  }
+  ul.experience {
+    grid-template-columns: repeat(12, minmax(0, 1fr));
+  }
+}
+
+ul.experience {
+  padding-top: 0.75rem;
+  padding-bottom: 0.75rem;
+}
+
+@media (min-width: 1024px) {
+  ul.experience {
+    padding-top: 1.5rem;
+    padding-bottom: 1.5rem;
+  }
+}
+
+ul.experience li {
+  padding-top: 0.75rem;
+  padding-bottom: 0.75rem;
+  grid-column: 1 / -1;
+}
+
+@media (min-width: 1024px) {
+  ul.experience li {
+    grid-column: span 6 / span 6;
+  }
+}
+
+ul.experience li {
+  font-size: 1.25rem;
+  line-height: 1.75rem;
+}
+
+@media (min-width: 768px) {
+  ul.experience li {
+    font-size: 1.5rem;
+    line-height: 2rem;
+  }
+}
+
+ul.experience li {
+  line-height: 1.5;
+}
+
+ul.experience li span {
+  --tw-text-opacity: 1;
+  color: rgb(107 114 128 / var(--tw-text-opacity));
+  display: block;
+}
+
+ul.experience > h1 {
+  font-size: 1.25rem;
+  line-height: 1.75rem;
+}
+
+@media (min-width: 768px) {
+  ul.experience > h1 {
+    font-size: 1.5rem;
+    line-height: 2rem;
+  }
+}
+
+ul.experience > h1 {
+  padding-top: 1.5rem;
+  padding-bottom: 1.5rem;
+  border-bottom-width: 1px;
+  --tw-border-opacity: 1;
+  border-color: rgb(107 114 128 / var(--tw-border-opacity));
+  grid-column: 1 / -1;
+  margin-bottom: 1.5rem;
+}
+
+.main p {
+  font-size: 1.25rem;
+  line-height: 1.75rem;
+}
+
+@media (min-width: 768px) {
+  .main p {
+    font-size: 1.5rem;
+    line-height: 2rem;
+  }
+}
+
+.main p {
+  line-height: 1.5;
+  grid-column: 1 / -1;
+  padding-top: 0.75rem;
+  padding-bottom: 0.75rem;
+}
+
+.main em {
+  border-bottom-width: 2px;
+  --tw-border-opacity: 1;
+  border-color: rgb(253 224 71 / var(--tw-border-opacity));
+  font-style: normal;
 }

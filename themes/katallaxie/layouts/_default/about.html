@@ -1,5 +1,5 @@
 {{ define "main" }}
-<div class="main">
+<div class="main" id="about">
     <div class="content-2-col">
         <div class="brand">
             <a class="" aria-label="Home" href="/">
@@ -39,6 +39,13 @@
     </div>
     <div class="content-3-col">
         {{ .Content }}
+
+        <ul class="experience">
+            <h1>Experience</h1>
+            {{ range $index, $skill := $.Site.Data.jobs.jobs }}
+            <li>{{ .company.name }}<span>{{ .title }}</span></li>
+            {{ end }}
+        </ul>
     </div>
 </div>
 {{ end }}

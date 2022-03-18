@@ -450,9 +450,6 @@ body:not(.dark) #sun {
 
 .accordion .atoms ul {
     @apply py-6;
-}
-
-.accordion .atoms li {
     @apply grid;
     @apply grid-cols-2;
     @apply gap-4;
@@ -509,4 +506,50 @@ body:not(.dark) #sun {
 
 .accordion input:checked ~ div {
     display: block;
+}
+
+ul.experience {
+    @apply col-span-full;
+    @apply md:grid;
+    @apply md:grid-cols-12;
+    @apply py-3;
+    @apply lg:py-6;
+}
+
+ul.experience li {
+   @apply py-3;
+   @apply col-span-full;
+   @apply lg:col-span-6;
+   @apply text-xl;
+   @apply md:text-2xl;
+   @apply leading-normal;
+}
+
+ul.experience li span {
+    @apply text-gray-500;
+    @apply block;
+}
+
+ul.experience > h1 {
+    @apply text-xl;
+    @apply md:text-2xl;
+    @apply py-6;
+    @apply border-b;
+    @apply border-gray-500;
+    @apply col-span-full;
+    @apply mb-6;
+}
+
+.main p {
+    @apply text-xl;
+    @apply md:text-2xl;
+    @apply leading-normal;
+    @apply col-span-full;
+    @apply py-3;
+}
+
+.main em {
+    @apply border-b-2;
+    @apply border-yellow-300;
+    @apply not-italic;
 }
