@@ -17,11 +17,7 @@
         Sebastian Döll is a Berlin based senior software engineer at Microsoft.
         Crafting software with great user experiences.
       </h4>
-      <a
-        class="block text-gray-500 text-xl lg:text-2xl hover:text-white"
-        href="/about/"
-        >Curriculum Vitae</a
-      >
+      <h4><a href="/about/">Curriculum Vitae</a></h4>
     </div>
   </div>
   <div class="content-3-col">
@@ -36,120 +32,19 @@
         </li>
         {{ end }}
       </ul>
-
-      <div class="py-3 xl:py-0">
-        <a href="/posts/composition-in-nextjs-static-properties/">
-          <h3 class="text-2xl md:text-3xl py-3 md:py-6">
-            Composition in Next.js Static Properties
-          </h3>
-        </a>
-        <h3
-          class="text-2xl md:text-3xl py-3 md:py-6 text-gray-500 -mt-3 md:-mt-8"
-        >
-          March 26, 2021
-        </h3>
-      </div>
-      <div class="py-3 xl:py-0">
-        <a href="/posts/the-power-of-typescript-for-graphql-union-type/">
-          <h3 class="text-2xl md:text-3xl py-3 md:py-6">
-            The Power of TypeScript for GraphQL Union Type
-          </h3>
-        </a>
-        <h3
-          class="text-2xl md:text-3xl py-3 md:py-6 text-gray-500 -mt-3 md:-mt-8"
-        >
-          March 26, 2021
-        </h3>
-      </div>
-      <div class="py-3 xl:py-0">
-        <a href="/posts/the-state-of-go-plugins/">
-          <h3 class="text-2xl md:text-3xl py-3 md:py-6">
-            The State of Go Plugins
-          </h3>
-        </a>
-        <h3
-          class="text-2xl md:text-3xl py-3 md:py-6 text-gray-500 -mt-3 md:-mt-8"
-        >
-          March 26, 2021
-        </h3>
-      </div>
-      <div class="py-3 xl:py-0">
-        <a href="/posts/module-resolution-in-large-projects-with-typescript/">
-          <h3 class="text-2xl md:text-3xl py-3 md:py-6">
-            Module Resolution in Large Projects with TypeScript
-          </h3>
-        </a>
-        <h3
-          class="text-2xl md:text-3xl py-3 md:py-6 text-gray-500 -mt-3 md:-mt-8"
-        >
-          March 26, 2021
-        </h3>
-      </div>
-      <div class="py-3 xl:py-0">
-        <a
-          href="/posts/deploy-aws-cloudformation-stacks-with-github-actions-react-example/"
-        >
-          <h3 class="text-2xl md:text-3xl py-3 md:py-6">
-            Deploy AWS CloudFormation stacks with GitHub Actions + React Example
-          </h3>
-        </a>
-        <h3
-          class="text-2xl md:text-3xl py-3 md:py-6 text-gray-500 -mt-3 md:-mt-8"
-        >
-          March 26, 2021
-        </h3>
-      </div>
     </section>
     <section class="pb-8 lg:pb-12">
-      <h2 class="text-3xl lg:text-4xl py-6 text-gray-500">Projects.</h2>
-      <div class="py-3 xl:py-0">
-        <a href="https://github.com/awslabs/aws-lambda-dart-runtime">
-          <h3 class="text-2xl md:text-3xl py-3 md:py-6">
-            Dart Runtime for AWS Lambda
-          </h3>
-        </a>
-        <h3
-          class="text-2xl md:text-3xl py-3 md:py-6 text-gray-500 -mt-3 md:-mt-8"
-        >
-          A custom runtime for AWS Lambda to run Dart programs serverless.
+      <h2>Projects.</h2>
+      {{ range $.Site.Data.projects.projects }}
+      <a href="{{ .url }}">
+        <h3 class="text-2xl md:text-3xl py-3 md:py-6">
+          {{ .name }}
         </h3>
-      </div>
-      <div class="py-3 xl:py-0">
-        <a
-          href="https://github.com/aws-actions/aws-cloudformation-github-deploy"
-        >
-          <h3 class="text-2xl md:text-3xl py-3 md:py-6">
-            AWS CloudFormation GitHub Action
-          </h3>
-        </a>
-        <h3
-          class="text-2xl md:text-3xl py-3 md:py-6 text-gray-500 -mt-3 md:-mt-8"
-        >
-          A GitHub Action to deploy AWS CloudFormation Stacks to the AWS cloud.
-        </h3>
-      </div>
-      <div class="py-3 xl:py-0">
-        <a href="https://github.com/andersnormal/autobot">
-          <h3 class="text-2xl md:text-3xl py-3 md:py-6">Autobot</h3>
-        </a>
-        <h3
-          class="text-2xl md:text-3xl py-3 md:py-6 text-gray-500 -mt-3 md:-mt-8"
-        >
-          Autobot is your nice and friendly bot. He is pluggable via Pub/Sub and
-          written in Go.
-        </h3>
-      </div>
-      <div class="py-3 xl:py-0">
-        <a href="https://github.com/awslabs/ssosync">
-          <h3 class="text-2xl md:text-3xl py-3 md:py-6">SSOSync</h3>
-        </a>
-        <h3
-          class="text-2xl md:text-3xl py-3 md:py-6 text-gray-500 -mt-3 md:-mt-8"
-        >
-          Populate AWS SSO directly with your G Suite users and groups using
-          either a CLI or AWS Lambda.
-        </h3>
-      </div>
+      </a>
+      <h4>
+        {{ .description }}
+      </h4>
+      {{ end }}
     </section>
     {{- partial "bottom.html" . -}}
   </div>

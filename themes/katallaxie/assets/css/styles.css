@@ -315,10 +315,14 @@ footer {
     @apply text-gray-500;
 }
 
-.teaser > h4 {
-    @apply text-xl;
-    @apply md:text-2xl;
-    @apply py-6;
+.main .teaser > h4 {
+    @apply py-8;
+    @apply text-white;
+}
+
+.main .teaser a {
+    @apply text-gray-500;
+    @apply hover:text-white;
 }
 
 .brand {
@@ -569,4 +573,20 @@ ul.experience > h1 {
     @apply border-b-2;
     @apply border-yellow-300;
     @apply not-italic;
+}
+
+.main h3 {
+   @apply text-2xl;
+   @apply md:text-3xl;
+   @apply py-3 md:py-6;
+}
+
+.main h4 {
+    @apply text-2xl;
+    @apply md:text-3xl;
+    @apply py-3;
+    @apply md:py-6;
+    @apply text-gray-500;
+    @apply -mt-3;
+    @apply md:-mt-8;
 }

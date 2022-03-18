@@ -1042,21 +1042,21 @@ footer {
   color: rgb(107 114 128 / var(--tw-text-opacity));
 }
 
-.teaser > h4 {
-  font-size: 1.25rem;
-  line-height: 1.75rem;
+.main .teaser > h4 {
+  padding-top: 2rem;
+  padding-bottom: 2rem;
+  --tw-text-opacity: 1;
+  color: rgb(255 255 255 / var(--tw-text-opacity));
 }
 
-@media (min-width: 768px) {
-  .teaser > h4 {
-    font-size: 1.5rem;
-    line-height: 2rem;
-  }
+.main .teaser a {
+  --tw-text-opacity: 1;
+  color: rgb(107 114 128 / var(--tw-text-opacity));
 }
 
-.teaser > h4 {
-  padding-top: 1.5rem;
-  padding-bottom: 1.5rem;
+.main .teaser a:hover {
+  --tw-text-opacity: 1;
+  color: rgb(255 255 255 / var(--tw-text-opacity));
 }
 
 .brand {
@@ -1538,4 +1538,64 @@ ul.experience > h1 {
   --tw-border-opacity: 1;
   border-color: rgb(253 224 71 / var(--tw-border-opacity));
   font-style: normal;
+}
+
+.main h3 {
+  font-size: 1.5rem;
+  line-height: 2rem;
+}
+
+@media (min-width: 768px) {
+  .main h3 {
+    font-size: 1.875rem;
+    line-height: 2.25rem;
+  }
+}
+
+.main h3 {
+  padding-top: 0.75rem;
+  padding-bottom: 0.75rem;
+}
+
+@media (min-width: 768px) {
+  .main h3 {
+    padding-top: 1.5rem;
+    padding-bottom: 1.5rem;
+  }
+}
+
+.main h4 {
+  font-size: 1.5rem;
+  line-height: 2rem;
+}
+
+@media (min-width: 768px) {
+  .main h4 {
+    font-size: 1.875rem;
+    line-height: 2.25rem;
+  }
+}
+
+.main h4 {
+  padding-top: 0.75rem;
+  padding-bottom: 0.75rem;
+}
+
+@media (min-width: 768px) {
+  .main h4 {
+    padding-top: 1.5rem;
+    padding-bottom: 1.5rem;
+  }
+}
+
+.main h4 {
+  --tw-text-opacity: 1;
+  color: rgb(107 114 128 / var(--tw-text-opacity));
+  margin-top: -0.75rem;
+}
+
+@media (min-width: 768px) {
+  .main h4 {
+    margin-top: -2rem;
+  }
 }

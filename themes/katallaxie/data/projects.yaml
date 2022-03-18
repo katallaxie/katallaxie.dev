@@ -1,0 +1,13 @@
+projects:
+  - name: Dart Runtime for AWS Lambda
+    description: A custom runtime for AWS Lambda to run Dart programs serverless.
+    url:
+  - name: Fiber Fragments
+    description: 🖼️ Micro fragmentation middleware for fiber 🚀 that enables to build microservice frontends.
+    url: https://github.com/github/fiber-fragments
+  - name: Autobot
+    description: 🤖 Autobot is your nice and friendly bot. He is pluggable via Pub/Sub and written in @golang.
+    url: https://github.com/andersnormal/autobot
+  - name: SSOSync
+    description: Populate AWS SSO directly with your G Suite users and groups using either a CLI or AWS Lambda
+    url: https://github.com/awslabs/ssosync
