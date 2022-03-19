@@ -747,13 +747,6 @@ ul.latest > li {
   padding-bottom: 0.75rem;
 }
 
-@media (min-width: 1280px) {
-  ul.latest > li {
-    padding-top: 0px;
-    padding-bottom: 0px;
-  }
-}
-
 ul.latest time {
   font-size: 1.5rem;
   line-height: 2rem;

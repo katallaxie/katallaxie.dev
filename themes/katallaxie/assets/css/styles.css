@@ -197,7 +197,6 @@ ul.latest h3 {
 
 ul.latest > li {
     @apply py-3;
-    @apply xl:py-0;
 }
 
 ul.latest time {

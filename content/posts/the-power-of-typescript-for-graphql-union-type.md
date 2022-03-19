@@ -3,7 +3,6 @@ title: "The Power of TypeScript for GraphQL Union Type"
 description:  "This is a gist to filter for union types in GraphQL"
 date: "2021-03-15"
 author: "Sebastian Doell"
-layout: single-3-col
 tags: ["graphql", "coodegen", "typescript"]
 ---
 
