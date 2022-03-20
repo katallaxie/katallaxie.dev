@@ -10,3 +10,4 @@ theme = 'katallaxie'
 [markup]
   [markup.highlight]
     style = 'vim'
+    noClasses = false
