@@ -1,5 +1,7 @@
-{{- /* theme-toggle is enabled */}} {{- if (not .Site.Params.disableThemeToggle)
-}} {{- /* theme is light */}} {{- if (eq .Site.Params.defaultTheme "light") }}
+{{- /* theme-toggle is enabled */}}
+{{- if (not .Site.Params.disableThemeToggle)}}
+{{- /* theme is light */}}
+{{- if (eq .Site.Params.defaultTheme "light") }}
 <script>
   if (localStorage.getItem("pref-theme") === "dark") {
     document.body.classList.add("dark");
@@ -21,9 +23,9 @@
     document.body.classList.add("dark");
   }
 </script>
-{{- end }} {{- /* theme-toggle is disabled and theme is auto */}} {{- else if
-(and (ne .Site.Params.defaultTheme "light") (ne .Site.Params.defaultTheme
-"dark"))}}
+{{- end }}
+{{- /* theme-toggle is disabled and theme is auto */}}
+{{- else if(and (ne .Site.Params.defaultTheme "light") (ne .Site.Params.defaultTheme "dark"))}}
 <script>
   if (window.matchMedia("(prefers-color-scheme: dark)").matches) {
     document.body.classList.add("dark");

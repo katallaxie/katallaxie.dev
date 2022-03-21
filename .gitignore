@@ -1,33 +1,21 @@
 
-# Created by https://www.toptal.com/developers/gitignore/api/node,go
-# Edit at https://www.toptal.com/developers/gitignore?templates=node,go
+# Created by https://www.toptal.com/developers/gitignore/api/hugo,node,vim
+# Edit at https://www.toptal.com/developers/gitignore?templates=hugo,node,vim
 
-### Go ###
-# If you prefer the allow list template instead of the deny list, see community template:
-# https://github.com/github/gitignore/blob/main/community/Golang/Go.AllowList.gitignore
-#
-# Binaries for programs and plugins
-*.exe
-*.exe~
-*.dll
-*.so
-*.dylib
+### Hugo ###
+# Generated files by hugo
+/public/
+/resources/_gen/
+/assets/jsconfig.json
+hugo_stats.json
 
-# Test binary, built with `go test -c`
-*.test
+# Executable may be added to repository
+hugo.exe
+hugo.darwin
+hugo.linux
 
-# Output of the go coverage tool, specifically when used with LiteIDE
-*.out
-
-# Dependency directories (remove the comment below to include it)
-# vendor/
-
-# Go workspace file
-go.work
-
-### Go Patch ###
-/vendor/
-/Godeps/
+# Temporary lock file while building
+/.hugo_build.lock
 
 ### Node ###
 # Logs
@@ -169,4 +157,25 @@ dist
 # SvelteKit build / generate output
 .svelte-kit
 
-# End of https://www.toptal.com/developers/gitignore/api/node,go
+### Vim ###
+# Swap
+[._]*.s[a-v][a-z]
+!*.svg  # comment out if you don't need vector files
+[._]*.sw[a-p]
+[._]s[a-rt-v][a-z]
+[._]ss[a-gi-z]
+[._]sw[a-p]
+
+# Session
+Session.vim
+Sessionx.vim
+
+# Temporary
+.netrwhist
+*~
+# Auto-generated tag files
+tags
+# Persistent undo
+[._]*.un~
+
+# End of https://www.toptal.com/developers/gitignore/api/hugo,node,vim
