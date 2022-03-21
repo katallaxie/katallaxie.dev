@@ -8,7 +8,7 @@ const purgecss = require('@fullhuman/postcss-purgecss')({
         themeDir + '/hugo_stats.json',
         siteDir + '/hugo_stats.json',
     ],
-    safelist : [ /type/, /dark/, /chroma/ ],
+    safelist : [ /type/, /dark/ ],
     defaultExtractor: (content) => {
         let els = JSON.parse(content).htmlElements;
         return els.tags.concat(els.classes, els.ids);

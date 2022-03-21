@@ -639,7 +639,9 @@ ul.experience > h1 {
     @apply text-gray-500;
 }
 
-/* Background */  body:not(.dark) .chroma { background-color: transparent }
+/* purgecss start ignore */
+
+/* Background */ body:not(.dark) .chroma { background-color: transparent }
 /* Other */ body:not(.dark) .chroma .x {  }
 /* Error */ body:not(.dark) .chroma .err {  }
 /* LineTableTD */ body:not(.dark) .chroma .lntd { vertical-align: top; padding: 0; margin: 0; border: 0; }
@@ -804,3 +806,5 @@ ul.experience > h1 {
 /* GenericTraceback */ body.dark .chroma .gt { color: #0044dd }
 /* GenericUnderline */ body.dark .chroma .gl { text-decoration: underline }
 /* TextWhitespace */ body.dark .chroma .w {  }
+
+/* purgecss end ignore */
