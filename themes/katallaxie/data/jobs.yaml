@@ -21,7 +21,7 @@ jobs:
       name: Berlin
   - title: Technical Lead
     company:
-      name: Accentue
+      name: Accenture
     location:
       name: Duesseldorf
   - title: Research Fellow
