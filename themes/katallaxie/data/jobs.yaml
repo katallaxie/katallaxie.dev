@@ -14,18 +14,18 @@ jobs:
       name: DigitalOcean
     location:
       name: Berlin
-  - title: Axel Springer
+  - title: Lead Engineer
     company:
-      name: Lead Engineer
+      name: Axel Springer
     location:
       name: Berlin
-  - title: Accenture
+  - title: Technical Lead
     company:
-      name: Technical Lead
+      name: Accentue
     location:
       name: Duesseldorf
-  - title: FSU Jena
+  - title: Research Fellow
     company:
-      name: Research Fellow
+      name: FSU Jena
     location:
       name: Jena
