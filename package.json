@@ -1,4 +1,6 @@
 {
+  "name": "katallaxie.dev",
+  "private":true,
   "dependencies": {
     "@fullhuman/postcss-purgecss": "^5.0.0",
     "@tailwindcss/aspect-ratio": "^0.4.2",
