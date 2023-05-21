@@ -7,7 +7,6 @@
     <meta name="theme-color" content="#ffffff" media="(prefers-color-scheme: light)">
     <meta name="theme-color" content="#000000" media="(prefers-color-scheme: dark)">
 
-    <meta property="og:url" content="https://katallaxie.me/home">
     <meta property="og:type" content="{{ if .IsPage }}article{{ else }}website{{ end }}">
     <meta property="og:title" content="{{ if .IsHome }}{{ .Site.Title }}{{ else }}{{ .Title }} &middot; {{ .Site.Title }}{{ end }}">
     <meta property="og:description" content="{{ if .IsHome }}{{ .Description }}{{ else }}{{ htmlEscape .Summary }}{{ end }}">
