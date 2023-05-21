@@ -1,6 +1,7 @@
 baseURL = ''
 languageCode = 'en-us'
 title = 'Sebastian Döll | Head of PaaS Internal Services at IONOS'
+description = 'Sebastian Döll Head of PaaS Internal Services at IONOS. Crafting software with great user experiences.'
 
 theme = 'katallaxie'
 
