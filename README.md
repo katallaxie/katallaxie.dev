@@ -1,4 +1,4 @@
-# katallaxie.dev
+# 🙈 Personal website of @katallaxie
 
 :point_right: [katallaxie.dev](https://katallaxie.dev)
 
