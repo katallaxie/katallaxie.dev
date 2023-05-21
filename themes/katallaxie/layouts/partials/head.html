@@ -1,7 +1,7 @@
 <head>
     <meta charset="utf-8">
 
-    <meta name="description" content="Sebastian Döll is Head of PaaS Internal Services at IONOS. Crafting software with great user experiences.">
+    <meta name="description" content="{{ if .IsHome }}{{ .Site.Params.description }}{{ else }}{{ htmlEscape .Summary }}{{ end }}">
     <meta name="msapplication-TileColor" content="#da532c">
     
     <meta name="theme-color" content="#ffffff" media="(prefers-color-scheme: light)">
