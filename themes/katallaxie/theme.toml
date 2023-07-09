@@ -6,7 +6,6 @@ homepage = "https://katallaxie.me/"
 tags = []
 features = []
 min_version = "0.41.0"
-enableRobotsTXT = true
 
 [author]
   name = "Sebastian Döll"
