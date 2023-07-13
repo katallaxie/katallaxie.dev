@@ -39,4 +39,8 @@
 
     <link rel="preload" href="/fonts/roboto-v29-latin-regular.woff2" as="font" type="font/woff2" crossorigin>
     <link rel="preload" href="/fonts/roboto-v29-latin-500.woff2" as="font" type="font/woff2" crossorigin>
+
+    {{ range .AlternativeOutputFormats -}}
+        {{ printf `<link rel="%s" type="%s" href="%s" title="%s" />` .Rel .MediaType.Type .Permalink $.Site.Title | safeHTML }}
+    {{ end -}}
 </head>
