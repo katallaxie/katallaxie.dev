@@ -1,53 +1,53 @@
 {{ define "main" }}
 <div class="main" id="about">
-    <div class="content-2-col">
-        <div class="brand">
-            <a class="" aria-label="Home" href="/">
-                <svg viewBox="0 0 84 24">
-                    <g fill="none" fill-rule="evenodd">
-                        <circle fill="#FFCA09" cx="12" cy="12" r="12"></circle>
-                        <path fill="#3077F8" d="M41 0l12 24H29z"></path>
-                        <path fill="#E51D1D" d="M60 0h24v24H60z"></path>
-                    </g>
-                </svg>
-            </a>
-        </div>
-        <div class="teaser">
-            <h4>
-                Sebastian Döll is Head of PaaS Internal Services at IONOS.
-                Crafting software with great user experiences.
-            </h4>
-        </div>
-        <div class="skills accordion">
-            {{ range $index, $skill := $.Site.Data.skills }}
-            <div>
-                <input id="context+{{ $index }}" name="context" type="radio">
-                <label for="context+{{ $index }}">
-                    <h4 class="">{{ $skill.Name }}</h4>
-                    <div></div>
-                </label>
-                <div class="atoms">
-                    <ul>
-                        {{ range $skill.Skills }}
-                        <li>{{ . }}</li>
-                        {{ end }}
-                    </ul>
-                </div>
-            </div>
-            {{ end }}
-        </div>
+  <div class="content-2-col">
+    <div class="brand">
+      <a class="" aria-label="Home" href="/">
+        <svg viewBox="0 0 84 24">
+          <g fill="none" fill-rule="evenodd">
+            <circle fill="#FFCA09" cx="12" cy="12" r="12"></circle>
+            <path fill="#3077F8" d="M41 0l12 24H29z"></path>
+            <path fill="#E51D1D" d="M60 0h24v24H60z"></path>
+          </g>
+        </svg>
+      </a>
     </div>
-    <div class="content-3-col">
-        {{ .Content }}
-
-        <ul class="experience">
-            <h1>Experience</h1>
-            {{ range $index, $skill := $.Site.Data.jobs.jobs }}
-            <li>{{ .company.name }}<span>{{ .title }}</span></li>
-            {{ end }}
-        </ul>
-
-        {{- partial "bottom.html" . -}}
+    <div class="teaser">
+      <h4>
+        Sebastian Döll is Solution Architect at ZEISS GROUP.
+        Crafting software with great user experiences.
+      </h4>
     </div>
+    <div class="skills accordion">
+      {{ range $index, $skill := $.Site.Data.skills }}
+      <div>
+        <input id="context+{{ $index }}" name="context" type="radio">
+        <label for="context+{{ $index }}">
+          <h4 class="">{{ $skill.Name }}</h4>
+          <div></div>
+        </label>
+        <div class="atoms">
+          <ul>
+            {{ range $skill.Skills }}
+            <li>{{ . }}</li>
+            {{ end }}
+          </ul>
+        </div>
+      </div>
+      {{ end }}
+    </div>
+  </div>
+  <div class="content-3-col">
+    {{ .Content }}
+
+    <ul class="experience">
+      <h1>Experience</h1>
+      {{ range $index, $skill := $.Site.Data.jobs.jobs }}
+      <li>{{ .company.name }}<span>{{ .title }}</span></li>
+      {{ end }}
+    </ul>
+
+    {{- partial "bottom.html" . -}}
+  </div>
 </div>
 {{ end }}
