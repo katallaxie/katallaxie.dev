@@ -1,4 +1,9 @@
 jobs:
+  - title: Solution Architect
+    company:
+      name: ZEISS GROUP
+    location:
+      name: Jena
   - title: Head of PaaS Internal Services
     company:
       name: IONOS Cloud

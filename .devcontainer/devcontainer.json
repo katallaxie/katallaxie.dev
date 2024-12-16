@@ -21,7 +21,6 @@
           "extensions": [
               "GitHub.copilot",
               "golang.go",
-              "ms-vscode.cpptools",
               "ms-vscode.makefile-tools"
           ]
       }

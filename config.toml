@@ -1,11 +1,12 @@
 baseURL = ''
 languageCode = 'en-us'
-title = 'Sebastian Döll | Head of PaaS Internal Services at IONOS'
+title = 'Sebastian Döll | Solution Architect @ ZEISS GROUP'
+enableRobotsTXT = true
 
 theme = 'katallaxie'
 
 [params]
-  description = 'Sebastian Döll Head of PaaS Internal Services at IONOS. Crafting software with great user experiences.'
+  description = 'Sebastian Döll is a snarky engineer in the cloud. Crafting software with great user experiences.'
 
 [build]
   writeStats = true
