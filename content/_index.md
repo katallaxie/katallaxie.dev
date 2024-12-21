@@ -85,6 +85,6 @@ author = "Hugo Authors"
         <footer class="py-16 xl:pt-24 text-gray-500"><button class="flex flex-col focus:outline-none">
                 <h2 class="text-3xl lg:text-4xl py-6 uppercase font-semibold">BACK TOP.</h2>
             </button>
-            <p class="col-span-full py-6">Copyright © 2023. All rights reserved 🤘.</p>
+            <p class="col-span-full py-6">Copyright © 2024. All rights reserved 🤘.</p>
         </footer>
     </div>
