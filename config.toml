@@ -2,7 +2,6 @@ baseURL = ''
 languageCode = 'en-us'
 title = 'Sebastian Döll | Solution Architect @ ZEISS GROUP'
 enableRobotsTXT = true
-
 theme = 'katallaxie'
 
 [params]

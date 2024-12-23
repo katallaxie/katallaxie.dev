@@ -1,5 +1,5 @@
-const themeDir = __dirname + '/../../';
-const siteDir = __dirname + '/../../../../';
+const themeDir = __dirname + '/';
+const siteDir = __dirname + '/../../';
 
 const purgecss = require('@fullhuman/postcss-purgecss')({
     // see https://gohugo.io/hugo-pipes/postprocess/#css-purging-with-postcss
@@ -15,12 +15,10 @@ const purgecss = require('@fullhuman/postcss-purgecss')({
     }
 })
 
-module.exports = {    
+module.exports = {
     plugins: [
-        require('tailwindcss')(themeDir + 'assets/css/tailwind.config.js'),
-        require('autoprefixer')({
-            path: [themeDir]
-        }),
+        require('tailwindcss')(themeDir + 'tailwind.config.js'),
+        require('autoprefixer')({ path: [themeDir] }),
         ...(process.env.HUGO_ENVIRONMENT === 'production' ? [purgecss] : [])
     ]
 }

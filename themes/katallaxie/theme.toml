@@ -2,14 +2,14 @@ name = "katallaxie"
 license = "MIT"
 licenselink = "https://github.com/katallaxie/hugo-katallaxie/blob/master/LICENSE"
 description = ""
-homepage = "https://katallaxie.me/"
+homepage = "https://katallaxie.dev/"
 tags = []
 features = []
 min_version = "0.41.0"
 
 [author]
   name = "Sebastian Döll"
-  homepage = "https://katallaxie.me"
+  homepage = "https://katallaxie.dev"
 
 features = [
   "theme-toggle"

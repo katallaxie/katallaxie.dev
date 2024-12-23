@@ -28,7 +28,7 @@
   {{ $css := resources.Get "css/styles.css" }}
   {{ $styles := $css | css.PostCSS }}
 
-  {{- $styles := resources.Get "css/styles.css" | postCSS (dict "config" "./assets/css/postcss.config.js") -}}
+  {{- $styles := resources.Get "css/styles.css" | postCSS (dict "config" "./postcss.config.js") -}}
   {{- if hugo.IsServer}}
   <link rel="stylesheet" href="{{ $styles.RelPermalink }}">
   {{ else }}
