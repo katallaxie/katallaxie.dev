@@ -1,13 +1,16 @@
 projects:
-  - name: Dart Runtime for AWS Lambda
-    description: A custom runtime for AWS Lambda to run Dart programs serverless.
-    url: https://github.com/awslabs/aws-lambda-dart-runtime
-  - name: Fiber Fragments
-    description: 🖼️ Micro fragmentation middleware for fiber 🚀 that enables to build microservice frontends.
-    url: https://github.com/github/fiber-fragments
-  - name: Autobot
-    description: 🤖 Autobot is your nice and friendly bot. He is pluggable via Pub/Sub and written in @golang.
-    url: https://github.com/andersnormal/autobot
+  - name: Typhoon
+    description: An event bridge for applications and services build on an event mesh with a team-oriented self-service control plane.
+    url: https://github.com/zeiss/typhoon
+  - name: NATZ Operator
+    description: A Kubernetes operator to setup and manage NATS.io accounts, users, and permissions.
+    url: https://github.com/zeiss/natz-operator
+  - name: HTMX for Fiber
+    description: 🔨Write HTML and HTMX applications in pure Go using ⚡️ fiber. And lot more ...
+    url: https://github.com/ZEISS/fiber-htmx
+  - name: pkg
+    description: A curated collection of Go packages that make the life easier.
+    url: https://github.com/zeiss/pkg
   - name: SSOSync
     description: Populate AWS SSO directly with your G Suite users and groups using either a CLI or AWS Lambda
     url: https://github.com/awslabs/ssosync
