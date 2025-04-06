@@ -3,6 +3,8 @@ title: "Module Resolution in Large Projects with TypeScript"
 date: "2021-03-26"
 draft: false
 tags: ["typescript"]
+categories:
+- posts
 ---
 
 This post explains how to use custom paths for efficient [Module Resolution](https://www.typescriptlang.org/docs/handbook/module-resolution.html) in large [TypeScript](https://www.typescriptlang.org/) projects.

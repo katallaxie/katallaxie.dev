@@ -1,3 +1,9 @@
+@import "tailwindcss";
+@plugin "daisyui" {
+    themes: light --default, dark --prefersdark;
+}
+@source "hugo_stats.json";
+
 /* TailwindCSS base styles */
 /* see https://tailwindcss.com/docs/functions-and-directives#tailwind */
 @tailwind base;
@@ -7,7 +13,7 @@
 
 :root {
     /* COLOURS */
-    --background: #F6F6F6;
+    --background: #fff;
     --faint: #e6e6e6;
     --lines: #CCC;
     --labels: #999;
@@ -52,7 +58,7 @@
 
 :root {
     /* COLOURS */
-    --background: #bbb;
+    --background: #fff;
     --faint: #ccc;
     --lines: #f6f6f6;
     --labels: #f6f6f6;
@@ -124,6 +130,161 @@ body.dark {
     }
 }
 
+.accent-projects-text-color {
+    @apply text-neutral-800;
+    @apply hover:text-green-400;
+}
+
+.accent-projects-bg-color {
+    @apply bg-green-400;
+}
+
+.accent-projects-border-color {
+    @apply border-green-400;
+}
+
+.accent-notes-text-color {
+    @apply text-neutral-800;
+    @apply hover:text-yellow-400;
+}
+
+.accent-notes-bg-color {
+    @apply bg-yellow-400;
+}
+
+.accent-notes-border-color {
+    @apply border-yellow-400;
+}
+
+.accent-posts-text-color {
+    @apply text-neutral-800;
+    @apply hover:text-blue-400;
+}
+
+.accent-posts-bg-color {
+    @apply bg-blue-400;
+}
+
+.accent-posts-border-color {
+    @apply border-blue-400;
+}
+
+.accent-all-text-color {
+    @apply text-gray-800;
+}
+
+.accent-all-bg-color {
+    @apply bg-gray-800;
+}
+
+.accent-all-border-color {
+    @apply border-gray-800;
+}
+
+.shadow-solid-neutral-800 {
+    box-shadow: 3px 3px 0 0 var(--color-neutral-800);
+    @apply shadow-neutral-800;
+    @apply border-neutral-800;
+}
+
+.shadow-solid-neutral-400 {
+    box-shadow: 3px 3px 0 0 var(--color-neutral-400);
+    @apply shadow-neutral-400;
+    @appyl border-neutral-400;
+}
+
+.shadow-solid-yellow-400 {
+    box-shadow: 3px 3px 0 0 var(--color-yellow-400);
+    @apply shadow-yellow-400;
+    @apply border-yellow-400;
+}
+
+.shadow-solid-green-400 {
+    box-shadow: 3px 3px 0 0 var(--color-green-400);
+    @apply shadow-green-400;
+    @apply border-green-400;
+}
+
+.shadow-solid-blue-400 {
+    box-shadow: 3px 3px 0 0 var(--color-blue-400);
+    @apply shadow-blue-400;
+    @apply border-blue-400;
+}
+
+.shadow-solid-purple-400 {
+    box-shadow: 3px 3px 0 0 var(--color-purple-400);
+    @apply shadow-purple-400;
+    @apply border-purple-400;
+}
+
+.shadow-solid-red-400 {
+    box-shadow: 3px 3px 0 0 var(--color-red-400);
+    @apply shadow-red-400;
+    @apply border-red-400;
+}
+
+/* hack to make the shadow work */
+.shadow-solid-gray-400 {
+    box-shadow: 3px 3px 0 0 var(--color-gray-400);
+    @apply shadow-gray-400;
+    @apply border-gray-400;
+}
+
+.shadow-solid-projects {
+    box-shadow: 3px 3px 0 0 var(--color-green-400);
+    @apply shadow-green-400;
+}
+
+.shadow-solid-notes {
+    box-shadow: 3px 3px 0 0 var(--color-yellow-400);
+}
+
+.shadow-solid-posts {
+    box-shadow: 3px 3px 0 0 var(--color-blue-400);
+    @apply shadow-blue-400;
+}
+
+.shadow-solid-highlight {
+    box-shadow: 3px 3px 0 0  var(--color-purple-400);
+    @apply shadow-purple-400;
+}
+
+.content {
+    h1 {
+        @apply text-4xl;
+        @apply font-bold;
+        @apply mt-6;
+        @apply mb-4;
+    }
+
+    h2 {
+        @apply text-3xl;
+        @apply font-bold;
+        @apply mt-6;
+        @apply mb-4;
+    }
+
+    h3 {
+        @apply text-2xl;
+        @apply font-semibold;
+        @apply mt-6;
+        @apply mb-2;
+    }
+
+    h4 {
+        @apply text-xl;
+        @apply font-semibold;
+    }
+
+    h5 {
+        @apply text-lg;
+    }
+
+    h6 {
+        @apply text-base;
+    }
+}
+
 @layer utilities {
     @variants responsive {
       .scroll-snap-none {
@@ -145,499 +306,8 @@ body.dark {
         writing-mode: vertical-lr;
       }
     }
-  }
-
-.wrap {
-    @apply top-0;
-    @apply left-0;
-    @apply transition-all;
-    @apply transform-gpu;
-    @apply grid;
-    @apply gap-x-4;
-    @apply grid-cols-12;
-    @apply h-screen;
-    @apply w-screen;
-    @apply md:fixed;
-    @apply md:overflow-hidden;
-}
-
-.content {
-    @apply col-span-full;
-    @apply md:pt-0;
-    @apply md:col-span-10;
-    @apply xl:col-span-11;
-    @apply md:overflow-y-auto;
-    @apply md:overflow-x-hidden;
-}
-
-.content-2-col {
-   @apply col-span-full;
-   @apply lg:col-span-10;
-   @apply xl:col-span-4; 
-   @apply px-8;
-   @apply md:pt-24;
-}
-
-.content section {
-    @apply pb-8;
-    @apply lg:pb-12;
-}
-
-.content section > h2 {
-    @apply text-3xl;
-    @apply lg:text-4xl;
-    @apply py-6;
-    @apply text-gray-500;
-}
-
-ul.latest h3 {
-    @apply text-2xl;
-    @apply md:text-3xl;
-    @apply py-3;
-    @apply md:py-6;
-}
-
-ul.latest > li {
-    @apply py-3;
-}
-
-ul.latest time {
-    @apply text-2xl;
-    @apply md:text-3xl;
-    @apply py-3;
-    @apply md:py-6;
-    @apply text-gray-500;
-    @apply -mt-3;
-    @apply md:-mt-8;
-}
-
-.content-3-col {
-    @apply col-span-full;
-    @apply lg:col-span-10;
-    @apply xl:border-l;
-    @apply xl:border-gray-700;
-    @apply xl:col-start-5;
-    @apply py-12;
-    @apply px-8;
-    @apply xl:pr-12;
-    @apply xl:py-24;
-    @apply xl:pl-24;
-    @apply xl:col-span-7;
-}
-
-.content-1-col {
-    @apply col-span-full;
-    @apply xl:col-span-8;
-    @apply px-8; 
-    @apply md:py-24;
-}
-
-.single h1 {
-    @apply text-3xl; 
-    @apply lg:text-4xl; 
-    @apply py-6;
-}
-
-.single time {
-    @apply col-span-full;
-    @apply text-3xl;
-    @apply text-gray-500;
-    @apply -mt-3; 
-    @apply xl:mt-0;
-}
-
-.single aside {
-    @apply py-8;
-}
-
-.single ul.tags li {
-    @apply inline-block;
-}
-
-.single ul.tags a {
-    @apply rounded-xl;
-    @apply text-xl;
-    @apply text-gray-500;
-    @apply py-1;
-    @apply mr-2;
-}
-
-.single main {
-    @apply col-span-7;
-}
-
-.main {
-    @apply grid;
-    @apply grid-cols-12;
-    @apply gap-4 min-h-screen;
-}
-
-header {
-    @apply col-span-full;
-    @apply md:col-span-2;
-    @apply xl:col-span-1; 
-    @apply md:border-r; 
-    @apply md:border-gray-700;
-}
-
-header button {
-    @apply text-gray-500;
-    @apply hover:text-white;
-}
-
-body:not(.dark) header button {
-    @apply hover:text-gray-700;
-}
-
-header aside {
-    @apply w-full;
-    @apply h-full;
-    @apply flex;
-    @apply flex-row;
-    @apply justify-end;
-    @apply items-end;
-    @apply md:flex-col;
-    @apply md:justify-start;
-    @apply px-4;
-    @apply md:px-0;
-}
-
-header .greeting {
-    @apply transform-gpu;
-    @apply hidden;
-    @apply md:block;
-    @apply md:-rotate-180;
-    @apply whitespace-nowrap;
-    @apply text-3xl;
-    @apply md:text-4xl;
-    @apply font-semibold;
-    @apply md:vertical-lr;
-    @apply py-4;
-}
-
-footer {
-    @apply py-16;
-    @apply xl:pt-24;
-    @apply text-gray-500;
-}
-
-.main .teaser > h4 {
-    @apply py-8;
-    
-    color: var(--text);
-}
-
-.main .teaser a {
-    @apply text-gray-500;
-    @apply hover:text-white;
-}
-
-.brand {
-    @apply pb-8;
-    @apply md:pb-12;
-}
-
-.brand > a {
-    @apply w-20;
-    @apply md:w-24; 
-    @apply block;
-    @apply h-full;
-    @apply transition;
-    @apply transform-gpu;
-}
-
-#menu-toggle {
-}
-
-button#menu-toggle {
-    @apply p-4;
-}
-
-button#menu-toggle svg {
-    margin: auto;
-}
-
-nav {
-    @apply fixed;
-    @apply top-0;
-    @apply w-2/3;
-    @apply lg:w-1/3;
-    @apply -left-2/3;
-    @apply lg:-left-1/3;
-    @apply h-screen;
-    @apply transition-all;
-    @apply transform-gpu;
-    @apply overflow-hidden;
-    @apply border-r;
-    @apply border-gray-700;
-    @apply py-12;
-    
-    background-color: var(--background);
-}
-
-nav ul li {
-    @apply border-b;
-    @apply border-gray-700;
-}
-
-nav ul li a {
-    @apply block;
-    @apply text-gray-500;
-    @apply text-xl;
-    @apply md:text-2xl;
-    @apply lg:text-3xl;
-    @apply font-semibold;
-    @apply hover:text-white;
-    @apply p-6;
-    @apply w-full;
-}
-
-nav h2 {
-    @apply transform-gpu;
-    @apply hidden;
-    @apply md:block;
-    @apply md:-rotate-180;
-    @apply whitespace-nowrap; 
-    @apply text-3xl;
-    @apply md:text-4xl;
-    @apply py-6;
-    @apply font-semibold;
-}
-
-body.open .wrap {
-    @apply left-2/3;
-    @apply lg:left-1/3;
 }
 
-body.open nav {
-    @apply left-0;
-    @apply top-0;
-    @apply right-0;
-    @apply w-2/3;
-    @apply lg:w-1/3;
-    @apply opacity-100;
-    @apply lg:left-0;
-}
-
-body.open #open {
-    vertical-align: middle;
-    display: none;
-}
-
-body:not(.open) #close  {
-    display: none;
-}
-
-#theme-toggle svg {
-    margin: auto;
-}
-
-button#theme-toggle {
-    @apply m-4;
-    @apply p-2;
-    @apply text-3xl;
-    @apply md:text-4xl;
-    @apply font-semibold;
-}
-
-body.dark #moon {
-    vertical-align: middle;
-    display: none;
-}
-
-body:not(.dark) #sun {
-    display: none;
-}
-
-body:not(.dark) .main .teaser > h4 {
-    @apply py-8;
-    @apply text-black;
-}
-
-button#back {
-    @apply flex;
-    @apply flex-col;
-    @apply focus:outline-none;
-    @apply text-3xl;
-    @apply lg:text-4xl;
-    @apply py-6;
-    @apply uppercase;
-    @apply font-semibold;
-}
-
-.skills {
-    @apply py-8;
-    @apply md:py-12;
-}
-
-.main .accordion > div {
-    @apply overflow-clip;
-}
-
-.accordion .atoms {
-    @apply overflow-clip;
-    @apply text-xl;
-    @apply md:text-2xl;
-    @apply max-h-screen;
-}
-
-.accordion .atoms ul {
-    @apply py-6;
-    @apply grid;
-    @apply grid-cols-2;
-    @apply gap-4;
-}
-
-.accordion input {
-    @apply absolute;
-    @apply opacity-0;
-}
-
-.accordion input + label {
-    @apply flex;
-    @apply items-center;
-    @apply cursor-pointer;
-    @apply border-t;
-    @apply border-gray-500;
-    @apply hover:text-white;
-    @apply text-white;
-}
-
-.accordion input:checked + label {
-    @apply border-b;
-}
-
-.accordion label h4 {
-    @apply text-xl;
-    @apply md:text-2xl;
-    @apply py-6;
-    @apply mt-0;
-    @apply flex-grow;
-}
-
-.accordion label h4 + div {
-    @apply transform-gpu;
-    @apply w-0;
-    @apply h-0;
-    @apply border-l-8;
-    @apply border-r-8; 
-    @apply border-t-8;
-    @apply border-l-gray-500;
-    @apply transition-all;
-    @apply border-transparent;
-    @apply border-solid;
-
-    border-top: 8px solid;
-}
-
-.accordion input:checked + label h4 + div {
-    @apply rotate-180;
-}
-
-.accordion input:checked + label h4 {
-    color: var(--text);
-}
-
-.accordion input ~ div {
-    display: none;
-}
-
-.accordion input:checked ~ div {
-    display: block;
-}
-
-ul.experience {
-    @apply col-span-full;
-    @apply md:grid;
-    @apply md:grid-cols-12;
-    @apply py-3;
-    @apply lg:py-6;
-}
-
-ul.experience li {
-   @apply py-3;
-   @apply col-span-full;
-   @apply lg:col-span-6;
-   @apply text-xl;
-   @apply md:text-2xl;
-   @apply leading-normal;
-}
-
-ul.experience li span {
-    @apply text-gray-500;
-    @apply block;
-}
-
-ul.experience > h1 {
-    @apply text-xl;
-    @apply md:text-2xl;
-    @apply py-6;
-    @apply border-b;
-    @apply border-gray-500;
-    @apply col-span-full;
-    @apply mb-6;
-}
-
-.main p {
-    @apply text-xl;
-    @apply md:text-2xl;
-    @apply leading-normal;
-    @apply col-span-full;
-    @apply py-3;
-}
-
-.main em {
-    @apply border-b-2;
-    @apply border-yellow-300;
-    @apply not-italic;
-}
-
-.main h3 {
-   @apply text-2xl;
-   @apply md:text-3xl;
-   @apply py-3 md:py-6;
-}
-
-.main h4 {
-    @apply text-2xl;
-    @apply md:text-3xl;
-    @apply py-3;
-    @apply md:py-6;
-    @apply text-gray-500;
-    @apply -mt-3;
-    @apply md:-mt-8;
-}
-
-.main em {
-    @apply border-b-2;
-    @apply border-yellow-300;
-    @apply not-italic;
-}
-
-.main main a {
-    @apply border-b-2;
-    @apply border-yellow-300;
-    @apply not-italic;
-}
-
-.main ol {
-    @apply list-inside;
-    @apply list-decimal;
-    @apply text-xl;
-    @apply md:text-2xl;
-    @apply py-3;
-}
-
-.main ol li {
-    @apply py-1;
-}
-
-.main  h2 {
-    @apply text-3xl;
-    @apply lg:text-4xl;
-    @apply py-6;
-    @apply text-gray-500;
-}
 
 /* purgecss start ignore */
 

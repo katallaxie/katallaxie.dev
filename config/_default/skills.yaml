@@ -1,0 +1,4 @@
+params:
+  skills:
+    - name: "Go"
+      weight: 10

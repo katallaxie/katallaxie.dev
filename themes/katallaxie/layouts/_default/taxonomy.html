@@ -1,0 +1,44 @@
+{{ define "main" }}
+
+  <section class="my-16">
+    <div class="container relative flex flex-col justify-between h-full max-w-6xl px-10 mx-auto xl:px-0 my-20">
+      <div class="grid grid-cols-12 gap-4">
+        <div class="col-span-8">
+            <h2 class="my-2 text-3xl lg:text-4xl font-extrabold leading-tight text-neutral-800"><span class="underline decoration-wavy decoration-error">Insightful</span> content about <span class="underline underline-offset-1 decoration-4 decoration-accent">distributed systems</span> and <span class="underline underline-offset-1 decoration-4 decoration-accent">software engineering</span> currated for <span class="underline decoration-wavy decoration-error">you</span>.</h2>
+        </div>
+      </div>
+    </div>
+  </section>
+  
+  <aside>
+    {{- partial "widgets/categories.html" . -}}
+  </aside>
+
+  <section>
+    <div class="container relative flex flex-col justify-between h-full max-w-6xl px-10 mx-auto xl:px-0 mt-5">
+      <div class="grid grid-cols-12 gap-4">
+        {{ $types := slice "posts" "notes" "projects" }}
+        {{ $pages := where site.RegularPages ".Params.categories" "intersect" $types }}     
+        {{ $paginator := .Paginate $pages.ByTitle 5 }}
+        {{ range $paginator.Pages }}
+        <div class="flex flex-col h-full p-5 text-gray-800 col-span-full md:col-span-6 lg:col-span-4 border-2 border-primary shadow-[4px_4px_0px_0px_rgba(0,_0,_0,_0.8)] shadow-accent rounded-lg transition-transform duration-300 ease-in-out hover:scale-102">      
+          <a href="{{ .Permalink }}" class="link link-primary">
+            <h3 class="my-2 text-lg font-bold">{{ .Title }}</h3>
+          </a>
+          <p class="mb-2">{{ .Summary | strings.Truncate 123 }}</p>
+          <ul>
+            {{ range .Params.tags }}
+              <li class="badge badge-soft badge-primary">
+                {{ . }}
+              </li>
+            {{ end }}
+          </ul>
+        </div>
+      {{ end }}
+    </div>
+
+    <div class="container relative flex flex-row justify-center h-full max-w-6xl px-10 mx-auto xl:px-0 mt-5">
+      {{ template "partials/pagination.html" . }}
+    </div>
+  </section>
+{{ end }}

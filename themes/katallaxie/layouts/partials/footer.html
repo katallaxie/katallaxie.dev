@@ -1,3 +1,25 @@
+<footer>
+    <div class="container relative flex flex-col justify-between h-full py-16 max-w-6xl px-10 mx-auto xl:px-0 mt-5">
+        <div class="w-full">
+            <div class="flex grid grid-cols-12 gap-4">
+
+                {{- partial "widgets/subscribe.html" . -}}   
+    
+                <div class="col-span-full md:col-start-8 md:col-span-5">
+                    <ul class="menu menu-lg menu-vertical p-0 font-medium">
+                        {{ $colors := .Site.Params.color }}
+                        {{ range $index, $value := .Site.Menus.main }}
+                        <li>
+                            <a href="{{ $value.URL }}">{{ $value.Name }}</a>
+                        </li>
+                        {{ end }}
+                    </ul>
+                </div>        
+            </div>
+        </div>
+    </div>
+</footer>
+
 {{- if (not .Site.Params.disableThemeToggle) }}
 <script>
     document.getElementById("theme-toggle").addEventListener("click", () => {

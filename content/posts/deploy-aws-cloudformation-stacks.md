@@ -3,6 +3,8 @@ title: "Deploy AWS CloudFormation stacks with GitHub Actions + React Example"
 date: "2021-03-21"
 draft: false
 tags: ["aws", "github", "actions"]
+categories:
+- posts
 ---
 
 You want to deploy your infrastructure with GitHub Actions?

@@ -1,0 +1,51 @@
+<div class="container relative flex flex-col justify-between h-full max-w-6xl px-10 mx-auto xl:px-0 mt-5">
+  <div class="grid grid-cols-12 gap-4">
+      <div class="col-span-full md:col-span-8">
+        <div class="grid grid-cols-12 gap-4">
+          {{ $types := slice "posts" "notes" "projects" }}
+          {{ $pages := where site.RegularPages ".Params.categories" "intersect" $types }}     
+          {{ $paginator := .Paginate $pages.ByDate 3 }}
+          {{ range $paginator.Pages }}
+          <div class="flex flex-col h-full p-5 text-gray-800 col-span-full border-2 border-primary shadow-[4px_4px_0px_0px_rgba(0,_0,_0,_0.8)] shadow-accent rounded-lg transition-transform duration-300 ease-in-out hover:scale-102">      
+              <h2 class="text-xl font-bold">
+                  <a href="{{ .Permalink }}" class="link link-primary">
+                    {{ .Title }}
+                  </a>
+              </h2>
+              <p>{{ .Date.Format "Jan 2, 2006" }}</p>
+              <p class="py-1">{{ .Summary | strings.Truncate 123 }}</p>
+              <ul class="py-2">
+                {{ with .Params.categories }}
+                {{ range . }}
+                <li class="badge badge-soft badge-primary">
+                  <a href="{{ "categories" | absURL }}/{{ . | urlize }}">{{ . }}</a>
+                </li>
+                {{ end }}
+                {{ end }}
+                {{ with .Params.tags }}
+                {{ range . }}
+                  <li class="badge badge-soft badge-accent">
+                    <a href="{{ "tags" | absURL }}/{{ . | urlize }}">{{ . }}</a>
+                  </li>
+                {{ end }}
+                {{ end }}
+              </ul>
+          </div>
+          {{ end }}       
+          <div class="navbar justify-center col-span-full">
+            {{ template "partials/pagination.html" . }}
+        </div>
+        </div>
+      </div>
+      <div class="col-span-full md:col-span-4 order-first md:order-last">
+        <div class="flex flex-col h-full p-5 text-gray-800 col-span-full md:col-span-6 lg:col-span-4 shadow-solid-neutral-800 border-neutral-800 border-2 rounded-lg transition-transform duration-300 ease-in-out hover:scale-102">
+            <h2 class="text-xl font-bold underline underline-offset-4 decoration-wavy decoration-error">
+                What I love to share
+            </h2>
+            <p class="py-5">
+                I am learning every day and I love to share my knowledge with the world. I am passionate about open source, and I love to share my projects and ideas with the community. I am also a big fan of writing, and I love to share my thoughts and experiences through my blog.
+            </p>
+        </div>
+    </div>
+  </div>
+</div>

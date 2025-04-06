@@ -1,0 +1,54 @@
+<meta charset="utf-8">
+
+<meta name="description"
+  content="{{ if .IsHome }}{{ .Site.Params.description }}{{ else }}{{ htmlEscape .Summary }}{{ end }}">
+<meta name="msapplication-TileColor" content="#da532c">
+
+<meta name="theme-color" content="#ffffff" media="(prefers-color-scheme: light)">
+<meta name="theme-color" content="#000000" media="(prefers-color-scheme: dark)">
+
+<meta property="og:type" content="{{ if .IsPage }}article{{ else }}website{{ end }}">
+<meta property="og:title" content="{{ if .IsHome }}{{ .Site.Title }}{{ else }}{{ .Title }} &middot; {{ .Site.Title }}{{ end }}">
+<meta property="og:description" content="{{ if .IsHome }}{{ .Site.Params.description }}{{ else }}{{ htmlEscape .Summary }}{{ end }}">
+<meta property="og:url" content="{{ .Permalink }}">
+<meta property="og:site_name" content="{{ .Site.Title }}">
+
+<link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png?v=E6w3p0w8MX">
+<link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png?v=E6w3p0w8MX">
+<link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png?v=E6w3p0w8MX">
+<link rel="manifest" href="/site.webmanifest?v=E6w3p0w8MX">
+<link rel="shortcut icon" href="/favicon.ico?v=E6w3p0w8MX">
+
+<meta name="viewport" content="width=device-width, initial-scale=1">
+
+{{ with (templates.Defer (dict "key" "global")) }}
+  {{ with resources.Get "css/main.css" }}
+    {{ $opts := dict
+      "minify" hugo.IsProduction
+      "inlineImports" true
+    }}
+    {{ with . | css.TailwindCSS $opts }}
+      {{ if hugo.IsProduction }}
+        {{ with . | fingerprint }}
+          <link rel="stylesheet" href="{{ .RelPermalink }}" integrity="{{ .Data.Integrity }}" crossorigin="anonymous">
+        {{ end }}
+      {{ else }}
+        <link rel="stylesheet" href="{{ .RelPermalink }}">
+      {{ end }}
+    {{ end }}
+  {{ end }}
+{{ end }}
+
+{{ $title := print .Site.Title " | " .Title }}
+{{ if .IsHome }}{{ $title = .Site.Title }}{{ end }}
+<title>{{ $title }}</title>
+
+<link rel="preload" href="/fonts/roboto-v29-latin-regular.woff2" as="font" type="font/woff2" crossorigin>
+<link rel="preload" href="/fonts/roboto-v29-latin-500.woff2" as="font" type="font/woff2" crossorigin>
+
+{{ range .AlternativeOutputFormats -}}
+{{ printf `
+  <link rel="%s" type="%s" href="%s" title="%s" />` .Rel .MediaType.Type .Permalink $.Site.Title | safeHTML }}
+{{ end -}}
+
+{{- partial "head/custom.html" . -}}

@@ -3,7 +3,12 @@ title: "The Power of TypeScript for GraphQL Union Type"
 description:  "This is a gist to filter for union types in GraphQL"
 date: "2021-03-15"
 author: "Sebastian Doell"
-tags: ["graphql", "coodegen", "typescript"]
+tags: 
+  - graphql
+  - coodegen
+  - typescript
+categories:
+- posts
 ---
 
 [GraphQL](https://graphql.org/) is great. Code generating types for [TypeScript](https://www.typescriptlang.org/) is easy. GraphQL supports [introspection](https://graphql.org/learn/introspection/). This means a GraphQL API provides information about the described schema.
