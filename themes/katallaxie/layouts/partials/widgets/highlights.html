@@ -6,7 +6,7 @@
           {{ $pages := where site.RegularPages ".Params.categories" "intersect" $types }}     
           {{ $paginator := .Paginate $pages.ByDate 3 }}
           {{ range $paginator.Pages }}
-          <div class="flex flex-col h-full p-5 text-gray-800 col-span-full border-2 border-primary shadow-[4px_4px_0px_0px_rgba(0,_0,_0,_0.8)] shadow-accent rounded-lg transition-transform duration-300 ease-in-out hover:scale-102">      
+          <div class="flex flex-col h-full p-5 text-neutral col-span-full border-2 border-primary shadow-[4px_4px_0px_0px_rgba(0,_0,_0,_0.8)] shadow-accent rounded-lg transition-transform duration-300 ease-in-out hover:scale-102">      
               <h2 class="text-xl font-bold">
                   <a href="{{ .Permalink }}" class="link link-primary">
                     {{ .Title }}
@@ -38,7 +38,7 @@
         </div>
       </div>
       <div class="col-span-full md:col-span-4 order-first md:order-last">
-        <div class="flex flex-col h-full p-5 text-gray-800 col-span-full md:col-span-6 lg:col-span-4 shadow-solid-neutral-800 border-neutral-800 border-2 rounded-lg transition-transform duration-300 ease-in-out hover:scale-102">
+        <div class="flex flex-col h-full p-5 text-neutral col-span-full md:col-span-6 lg:col-span-4 shadow-[4px_4px_0px_0px_rgba(0,_0,_0,_0.8)] shadow-neutral border-neutral-800 border-2 rounded-lg transition-transform duration-300 ease-in-out hover:scale-102">
             <h2 class="text-xl font-bold underline underline-offset-4 decoration-wavy decoration-error">
                 What I love to share
             </h2>

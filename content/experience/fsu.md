@@ -7,6 +7,7 @@ jobTitle: "Research Fellow"
 company: "FSU Jena"
 location: "Jena, Germany"
 duration: "2010-2015"
+summary: Doing research in economic theory.
 ---
 
 ### Moved back to Jena, joined an 175 year old technology leader 🦄

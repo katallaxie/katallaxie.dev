@@ -1,28 +1,26 @@
 ---
 title: About
+layout: about
 ---
 
 # 👋 Heyyyy-yo!
 
-Sebastian here, I'm an engineer with decades of experience in software development, cloud computing, and digital transformation.
+Sebastian here, I'm an engineer with decades of experience in software development, cloud computing, and digital transformation 🦄 from Germany 🇩🇪.
 
-## Work
----
+I'm happiest when I'm creating, learning, exploring and thinking about how to make things better.
 
-### ZEISS
+## 🥳 Fun facts about me 
 
-#### Domain Architect
+There are a few things that I love to do in my free time. Here are some fun facts about me:
 
-Leading the digital transformation of the ZEISS Group. Building a new digital platform for the ZEISS Group.
+* 🧑‍💻 Coding Environment: Dark 🖤 + video 📼 in the background + coke 🧋
+* 🌀 Fan: Stargate
+* 🐱 Fun: LEGO 🧱
+* 🚴 Sport: Cycling + Rowing 🚣
+* 🏠 Hogwarts House: Gryffindor
 
-### IONOS
+## 💼 Work
 
-### Microsoft 
+Work is a big part of my life. I love to work on projects that challenge me and help me grow as an engineer. I have experience in a variety of programming languages and frameworks, and I'm always looking to learn new things.
 
-### Amazon Web Services
-
-### DigitalOcean
-
-### Axel Springer
-
-### Accenture
+{{< experience >}}

@@ -2,7 +2,8 @@
   "name": "katallaxie.dev",
   "private": true,
   "scripts": {
-    "start": "hugo server --buildDrafts --cleanDestinationDir --logLevel debug --gc --noHTTPCache --printI18nWarnings --templateMetrics --templateMetricsHints"
+    "start": "hugo server --buildDrafts --cleanDestinationDir --logLevel debug --gc --noHTTPCache --printI18nWarnings --templateMetrics --templateMetricsHints",
+    "build": "hugo --minify --gc --logLevel debug --printI18nWarnings --templateMetrics --templateMetricsHints"
   },
   "browserslist": [
     "last 1 version",

@@ -7,6 +7,7 @@ jobTitle: "Technical Lead"
 company: "Accenture"
 location: "Düsseldorf, Germany"
 duration: "2015-2016"
+summary: 
 ---
 
 ### Moved back to Jena, joined an 175 year old technology leader 🦄

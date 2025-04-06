@@ -5,6 +5,7 @@ draft: false
 tags: ["typescript"]
 categories:
 - posts
+summary: "This post explains how to use custom paths for efficient Module Resolution in large TypeScript projects."
 ---
 
 This post explains how to use custom paths for efficient [Module Resolution](https://www.typescriptlang.org/docs/handbook/module-resolution.html) in large [TypeScript](https://www.typescriptlang.org/) projects.
@@ -23,7 +24,7 @@ The common mechanism today is the [ES module: ECMAScript 2015, or ES6 module](ht
 
 An example of a module is a [React] (<https://reactjs.org/docs/components-and-props.html>) component that is shared between different pages. Extracting code into modules does not only make it easier to maintain a large code base and test functionality, but also to optimize your code. ES2015 allows to eliminate *unused code* via [tree shaking](https://webpack.js.org/guides/tree-shaking/).
 
-```language
+```typescript
 # DefaultLayout.tsx
 import React from 'react'
 

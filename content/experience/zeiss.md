@@ -7,6 +7,7 @@ jobTitle: "Domain Architect"
 company: "ZEISS"
 location: "Jena, Germany"
 duration: "2023-present"
+summary: Moved back to Jena, joined an 175 year old technology leader 🦄.
 ---
 
 ### Moved back to Jena, joined an 175 year old technology leader 🦄

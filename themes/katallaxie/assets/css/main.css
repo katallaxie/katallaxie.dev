@@ -130,158 +130,21 @@ body.dark {
     }
 }
 
-.accent-projects-text-color {
-    @apply text-neutral-800;
-    @apply hover:text-green-400;
-}
+@layer components {
+    .content {
+        p {
+          @apply py-2;
+        }
 
-.accent-projects-bg-color {
-    @apply bg-green-400;
-}
+        ol {
+          @apply list-decimal list-inside;
+          @apply py-4;
+        }
 
-.accent-projects-border-color {
-    @apply border-green-400;
-}
-
-.accent-notes-text-color {
-    @apply text-neutral-800;
-    @apply hover:text-yellow-400;
-}
-
-.accent-notes-bg-color {
-    @apply bg-yellow-400;
-}
-
-.accent-notes-border-color {
-    @apply border-yellow-400;
-}
-
-.accent-posts-text-color {
-    @apply text-neutral-800;
-    @apply hover:text-blue-400;
-}
-
-.accent-posts-bg-color {
-    @apply bg-blue-400;
-}
-
-.accent-posts-border-color {
-    @apply border-blue-400;
-}
-
-.accent-all-text-color {
-    @apply text-gray-800;
-}
-
-.accent-all-bg-color {
-    @apply bg-gray-800;
-}
-
-.accent-all-border-color {
-    @apply border-gray-800;
-}
-
-.shadow-solid-neutral-800 {
-    box-shadow: 3px 3px 0 0 var(--color-neutral-800);
-    @apply shadow-neutral-800;
-    @apply border-neutral-800;
-}
-
-.shadow-solid-neutral-400 {
-    box-shadow: 3px 3px 0 0 var(--color-neutral-400);
-    @apply shadow-neutral-400;
-    @appyl border-neutral-400;
-}
-
-.shadow-solid-yellow-400 {
-    box-shadow: 3px 3px 0 0 var(--color-yellow-400);
-    @apply shadow-yellow-400;
-    @apply border-yellow-400;
-}
-
-.shadow-solid-green-400 {
-    box-shadow: 3px 3px 0 0 var(--color-green-400);
-    @apply shadow-green-400;
-    @apply border-green-400;
-}
-
-.shadow-solid-blue-400 {
-    box-shadow: 3px 3px 0 0 var(--color-blue-400);
-    @apply shadow-blue-400;
-    @apply border-blue-400;
-}
-
-.shadow-solid-purple-400 {
-    box-shadow: 3px 3px 0 0 var(--color-purple-400);
-    @apply shadow-purple-400;
-    @apply border-purple-400;
-}
-
-.shadow-solid-red-400 {
-    box-shadow: 3px 3px 0 0 var(--color-red-400);
-    @apply shadow-red-400;
-    @apply border-red-400;
-}
-
-/* hack to make the shadow work */
-.shadow-solid-gray-400 {
-    box-shadow: 3px 3px 0 0 var(--color-gray-400);
-    @apply shadow-gray-400;
-    @apply border-gray-400;
-}
-
-.shadow-solid-projects {
-    box-shadow: 3px 3px 0 0 var(--color-green-400);
-    @apply shadow-green-400;
-}
-
-.shadow-solid-notes {
-    box-shadow: 3px 3px 0 0 var(--color-yellow-400);
-}
-
-.shadow-solid-posts {
-    box-shadow: 3px 3px 0 0 var(--color-blue-400);
-    @apply shadow-blue-400;
-}
-
-.shadow-solid-highlight {
-    box-shadow: 3px 3px 0 0  var(--color-purple-400);
-    @apply shadow-purple-400;
-}
-
-.content {
-    h1 {
-        @apply text-4xl;
-        @apply font-bold;
-        @apply mt-6;
-        @apply mb-4;
-    }
-
-    h2 {
-        @apply text-3xl;
-        @apply font-bold;
-        @apply mt-6;
-        @apply mb-4;
-    }
-
-    h3 {
-        @apply text-2xl;
-        @apply font-semibold;
-        @apply mt-6;
-        @apply mb-2;
-    }
-
-    h4 {
-        @apply text-xl;
-        @apply font-semibold;
-    }
-
-    h5 {
-        @apply text-lg;
-    }
-
-    h6 {
-        @apply text-base;
+        ul {
+          @apply list-disc list-inside;
+          @apply py-4;
+        }
     }
 }
 
