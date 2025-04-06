@@ -3,6 +3,8 @@ title: "Composition in Next.js Static Properties"
 date: "2021-03-24"
 draft: false
 tags: ["nextjs"]
+categories:
+- posts
 ---
 
 Composition is a method to write re-usable segments of code. This is achieved by constructing objects of full behavior by using objects with particular behavior.

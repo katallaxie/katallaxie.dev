@@ -1,0 +1,7 @@
+{{ $classmap := site.Data.classmap }}
+{{ $level := string .Level }}
+{{ $class := default "text-base" (index ($classmap.heading) $level) }}
+<h{{ .Level }} id="{{ .Anchor }}" {{- with .Attributes.class }} class="{{ . }}" {{- end }} class="{{ $class }}">
+  {{ .Text }}
+  <a href="#{{ .Anchor }}" class="link link-accent">#</a>
+</h{{ .Level }}>

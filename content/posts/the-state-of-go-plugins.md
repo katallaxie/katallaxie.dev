@@ -3,6 +3,9 @@ title: "The State of Go Plugins"
 date: "2021-03-24"
 draft: false
 tags: ["go"]
+categories:
+- posts
+summary: 'Learn about the different approaches to pluggable interfaces in Go.'
 ---
 
 [Terraform](https://www.terraform.io/), [Protocol Buffers](https://developers.google.com/protocol-buffers), [Waypoint](https://www.waypointproject.io/) or [Traefik](https://traefik.io/) have build a flourishing ecosystem by using the [Go](https://golang.org/) programming language and providing pluggable interfaces. But, not all pluggable interfaces in Go are created equal. There is more than one solution to the problem.

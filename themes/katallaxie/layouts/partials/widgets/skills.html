@@ -1,0 +1,57 @@
+<div class="container relative flex flex-col justify-between h-full max-w-6xl px-10 mx-auto xl:px-0 mt-5">
+    <div class="grid grid-cols-12 gap-4">
+        <div class="col-span-full">
+            <div class="flex flex-col h-full p-5 text-neutral col-span-full md:col-span-6 lg:col-span-4 shadow-solid-neutral-800 border-neutral-800 border-2 rounded-lg">
+                <h2 class="text-xl font-bold">
+                    
+                </h2>
+                <p class="py-5">
+                    Over 25 years of experience working in all kind of project sizes and teams. I have architected & developed digital products to help businesses and improve people's lives, solving complex problems with simple solutions.
+                </p>
+            </div>
+        </div> 
+        <div class="col-span-full">
+            <div class="grid grid-cols-12 gap-4">
+                {{ range .Site.Params.skills }}
+                <div class="flex flex-col justify-between h-full p-5 text-neutral col-span-full md:col-span-6 shadow-solid-gray-400 border-2 rounded-lg">
+                    <h2 class="text-lg font-bold">
+                        {{ .name }}
+                    </h3>
+                </div>
+                {{ end }}
+
+                {{ $pages := where site.RegularPages "Type" "experience" }}
+                {{ $colors := slice "yellow" "green" "purple" "red" "blue" }}
+                {{ with $pages }}
+                {{ range $index, $value := first 5 .ByDate.Reverse }}
+                {{ $color := default "gray" (index ($colors) $index)  }}
+                {{ if not $index }}
+                <div class="flex flex-col justify-between h-full p-5 text-neutral col-span-full md:col-span-6 shadow-solid-{{ $color }}-400 border-2 rounded-lg ">
+                    <h2 class="text-lg font-bold">
+                        {{ .Params.title }}
+                    </h3>
+                    <p class="text-gray-600">
+                        {{ .Params.company }}
+                    </p>
+                </div>
+                {{ else }}
+                <div class="flex flex-col justify-between h-full p-5 text-neutral col-span-full md:col-span-6 shadow-solid-{{ $color }}-400 border-2 rounded-lg">
+                    <h2 class="text-lg font-bold">
+                        {{ .Params.title }}
+                    </h3>
+                    <p class="text-gray-600">
+                        {{ .Params.company }}
+                    </p>
+                </div>
+                {{ end }}
+                {{ end }}
+                {{ end }}
+                <div class="flex flex-col justify-center h-full p-5 text-neutral col-span-full md:col-span-6 shadow-solid-gray-400 border-2 rounded-lg">
+                    <p class="text-gray-600">
+                        💬 Want to know more?
+                    </p>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

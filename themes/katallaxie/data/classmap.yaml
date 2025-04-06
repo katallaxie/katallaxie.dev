@@ -1,0 +1,7 @@
+heading:
+  "1": "text-4xl font-bold py-4"
+  "2": "text-2xl font-bold py-4"
+  "3": "text-xl font-bold py-4"
+  "4": "text-lg font-bold py-4"
+  "5": "text-base font-bold py-4"
+  "6": "text-md font-bold py-4"

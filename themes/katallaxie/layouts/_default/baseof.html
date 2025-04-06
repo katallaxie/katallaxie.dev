@@ -1,21 +1,19 @@
 <!DOCTYPE html>
-<html lang="en">
-{{- partial "head.html" . -}}
-
-<body>
-    <div class="wrap" >
+<html lang="en" data-theme="light">
+    <head>
+        {{ partialCached "css.html" . }}
+        {{- partial "head/head.html" . -}}
+        {{- block "head" . -}}{{ end }}
+    </head>
+    <body class="text-lg">
         {{- partial "header.html" . -}}
-        <div class="content" id="top">
-            {{- block "main" . }}{{- end }}
+
+        <div>
+            <main>
+                {{- block "main" . }}{{- end}}
+            </main>
         </div>
+
         {{- partial "footer.html" . -}}
-    </div>
-    <nav>
-        <ul>
-          <li><a href="https://github.com/katallaxie" target="_blank" rel="noreferrer">GitHub</a></li>
-          <li><a href="https://hachyderm.io/@katallaxie" target="_blank" rel="noreferrer">Mastodon</a></li>
-          <li><a href="https://linkedin.com/in/katallaxie" target="_blank"rel="noreferrer">LinkedIn</a></li>
-        </ul>
-    </nav>
-</body>
+    </body>
 </html>

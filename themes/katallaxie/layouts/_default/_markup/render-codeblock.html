@@ -1,0 +1,14 @@
+{{ $code := .Inner }}
+{{ $lang := .Type | default "plaintext" }}
+
+{{- /* Define optional highlight settings */ -}}
+{{ $highlightOptions := dict 
+    "lineNos" "true" 
+    "style" "chroma" 
+    "hl_Lines" .Attributes.hl_Lines 
+}}
+
+{{- /* Render the highlighted code using transform.Highlight */ -}}
+<div class="mockup-code w-full bg-neutral {{ $lang }} my-4">
+    {{ transform.Highlight $code $lang $highlightOptions | safeHTML }}
+</div>

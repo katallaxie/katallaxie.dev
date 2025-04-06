@@ -1,17 +1,26 @@
 ---
-title: "About"
-description:  "Hugo, the world's fastest framework for building websites"
-date: "2019-02-28"
-author: "Hugo Authors"
+title: About
 layout: about
 ---
 
-Hi folks. I am Sebastian.
+# 👋 Heyyyy-yo!
 
-*I love building things*. Make them more useful and fun. It doesn't matter if they are small or big.
+Sebastian here, I'm an engineer with decades of experience in software development, cloud computing, and digital transformation 🦄 from Germany 🇩🇪.
 
-I like solving problems, because every time I can learn something new. Especially when *solving the last 20%*.
+I'm happiest when I'm creating, learning, exploring and thinking about how to make things better.
 
-The answer doesn't have to be the smartest at the first shot, because I start with a simple one and *iterate over it to make it better*.
+## 🥳 Fun facts about me 
 
-My mantra to build great products and services. *Stay hungry. Stay foolish*.
+There are a few things that I love to do in my free time. Here are some fun facts about me:
+
+* 🧑‍💻 Coding Environment: Dark 🖤 + video 📼 in the background + coke 🧋
+* 🌀 Fan: Stargate
+* 🐱 Fun: LEGO 🧱
+* 🚴 Sport: Cycling + Rowing 🚣
+* 🏠 Hogwarts House: Gryffindor
+
+## 💼 Work
+
+Work is a big part of my life. I love to work on projects that challenge me and help me grow as an engineer. I have experience in a variety of programming languages and frameworks, and I'm always looking to learn new things.
+
+{{< experience >}}

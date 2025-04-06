@@ -7,6 +7,26 @@ theme = 'katallaxie'
 [params]
   description = 'Sebastian Döll is a snarky engineer in the cloud. Crafting software with great user experiences.'
 
+  [[params.color]]
+    name= "red"
+    weight = 10
+  
+  [[params.color]]
+    name= "green"
+    weight = 10
+
+  [[params.color]]
+    name= "yellow"
+     weight = 10
+  
+  [[params.color]]
+    name= "blue"
+    weight = 20
+  
+  [[params.color]]
+    name= "purple"
+    weight = 20
+
 [build]
   writeStats = true
 
@@ -19,3 +39,7 @@ theme = 'katallaxie'
   [markup.highlight]
     style = 'vim'
     noClasses = false
+
+[taxonomies]
+  category = 'categories'
+  tag = 'tags'

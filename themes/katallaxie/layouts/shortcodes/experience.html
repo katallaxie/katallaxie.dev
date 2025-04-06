@@ -1,0 +1,21 @@
+{{ $pages := where site.RegularPages "Type" "experience" }}
+{{ $colors := slice "yellow" "green" "purple" "red" "blue" }}
+{{ with $pages }}
+{{ range $index, $value := first 5 .ByDate.Reverse }}
+{{ $color := default "gray" (index ($colors) $index)  }}
+<div class="collapse collapse-arrow border-2 my-4 border-primary shadow-[4px_4px_0px_0px_rgba(0,_0,_0,_0.8)] shadow-accent rounded-lg">
+    <input type="radio" name="experience" checked="checked" />
+    <div class="collapse-title font-semibold">
+        <h2 class="text-xl text-primary font-bold">
+            {{ .Params.title }}
+        </h3>
+        <p>
+            {{ .Params.company }}
+        </p>
+    </div>
+    <div class="collapse-content text-lg">
+        {{ .Summary }}
+    </div>
+</div>
+{{ end }}
+{{ end }}
