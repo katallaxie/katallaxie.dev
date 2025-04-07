@@ -18,7 +18,7 @@
                 {{ range $index, $value := first 5 .ByDate.Reverse }}
                 {{ $color := default "gray" (index ($colors) $index)  }}
                 <div class="col-span-full collapse collapse-arrow border-2 border-primary shadow-[4px_4px_0px_0px_rgba(0,_0,_0,_0.8)] shadow-accent rounded-lg transition-transform duration-300 ease-in-out hover:scale-102">
-                    <input type="radio" name="experience" checked="checked" />
+                    <input type="radio" name="experience" />
                     <div class="collapse-title font-semibold">
                         <h2 class="text-xl text-primary font-bold">
                             {{ .Params.title }}
