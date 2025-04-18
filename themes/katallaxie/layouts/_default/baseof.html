@@ -1,11 +1,11 @@
 <!DOCTYPE html>
-<html lang="en" data-theme="light">
+<html lang="en" class="dark">
     <head>
         {{ partialCached "css.html" . }}
         {{- partial "head/head.html" . -}}
         {{- block "head" . -}}{{ end }}
     </head>
-    <body class="text-lg">
+    <body class="text-lg text-base-content dark:text-base-content">
         {{- partial "header.html" . -}}
 
         <div>
