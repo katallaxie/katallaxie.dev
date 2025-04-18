@@ -10,12 +10,12 @@
         {{ $pages := where site.RegularPages ".Params.categories" "intersect" $types }}     
         {{ $paginator := .Paginate $pages.ByTitle 5 }}
         {{ range $paginator.Pages }}
-        <div class="flex flex-col justify-between h-full p-5 text-neutral hover:text-purple-400 cursor-pointer col-span-full md:col-span-6 lg:col-span-4 shadow-solid-{{ .Page.Section }} accent-{{ .Page.Section }}-text-color border-2 accent-{{ .Page.Section }}-border-color rounded-lg ">
+        <div class="flex flex-col justify-between h-full p-5hover:text-purple-400 cursor-pointer col-span-full md:col-span-6 lg:col-span-4 shadow-solid-{{ .Page.Section }} accent-{{ .Page.Section }}-text-color border-2 accent-{{ .Page.Section }}-border-color rounded-lg ">
           <a href="{{ .Permalink }}">
             <h3 class="my-2 text-lg font-bold">{{ .Title }}</h3>
               <p class="mb-2">{{ .Summary | strings.Truncate 123 }}</p>
               <div>
-                  <ul class="flex flex-row flex-wrap font-bold text-neutral text-sm">
+                  <ul class="flex flex-row flex-wrap font-bold text-sm">
                       <li class="p-1 mx-1 border-2 border-neutral-800 hover:bg-neutral-800 hover:text-white rounded-lg">GitHub</li>
                       <li class="p-1 mx-1 border-2 border-neutral-800 hover:bg-neutral-800 hover:text-white rounded-lg">Open Source</li>
                       <li class="p-1 mx-1 border-2 border-neutral-800 hover:bg-neutral-800 hover:text-white rounded-lg">Projects</li>
