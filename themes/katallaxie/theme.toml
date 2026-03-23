@@ -5,7 +5,7 @@ description = ""
 homepage = "https://katallaxie.dev/"
 tags = []
 features = []
-min_version = "0.41.0"
+min_version = "0.158.0"
 
 [build]
   [build.buildStats]
@@ -25,13 +25,7 @@ min_version = "0.41.0"
     source = 'hugo_stats.json'
     target = 'assets/notwatching/hugo_stats.json'
 
-[author]
-  name = "Sebastian Döll"
-  homepage = "https://katallaxie.dev"
-  avatar = "images/avatar.png"
-
 features = [
-  "theme-toggle"
 ]
 
 # If porting an existing theme

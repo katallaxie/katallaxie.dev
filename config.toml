@@ -1,13 +1,16 @@
 baseURL = ''
 languageCode = 'en-us'
 title = 'Sebastian Döll | Engineer with decades of experience'
-author = 'Sebastian Döll'
 enableRobotsTXT = true
 theme = 'katallaxie'
 
-
 [params]
-  description = 'Sebastian Döll is a snarky engineer in the cloud. Crafting software with great user experiences.'
+  description = "Sebastian Döll is a snarky engineer in the cloud. Crafting software with great user experiences."
+
+  [params.author]
+    name = "Sebastian Döll"
+    homepage = "https://katallaxie.dev"
+    avatar = "images/avatar.png"
 
   [[params.color]]
     name= "red"
