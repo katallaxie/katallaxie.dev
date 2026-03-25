@@ -13,7 +13,7 @@
   ],
   "dependencies": {},
   "devDependencies": {
-    "@fullhuman/postcss-purgecss": "^7.0.2",
+    "@fullhuman/postcss-purgecss": "^8.0.0",
     "@tailwindcss/aspect-ratio": "^0.x",
     "@tailwindcss/cli": "^4.2.2",
     "@tailwindcss/forms": "^0.x",
