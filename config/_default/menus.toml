@@ -12,16 +12,13 @@
   name = "Blog"
   url = "/categories"
   weight = 20
-  customParam = "green"
 
 [[main]]
   name = "GitHub"
   url = "https://github.com/katallaxie"
   weight = 20
-  customParam = "red"
 
 [[main]]
   name = "LinkedIn"
   url = "https://linkedin.com/in/katallaxie"
   weight = 30
-  customParam = "purple"
