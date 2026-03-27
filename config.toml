@@ -33,7 +33,8 @@ theme = 'katallaxie'
     weight = 20
 
 [build]
-  writeStats = true
+  [build.buildStats]
+    enable = true
 
 [sitemap]
   changefreq = 'monthly'
