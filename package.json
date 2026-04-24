@@ -25,6 +25,6 @@
     "postcss-cli": "^11.x",
     "postcss": "^8.x",
     "tailwindcss-writing-mode": "^1.0.0",
-    "tailwindcss": "^4.2.2"
+    "tailwindcss": "^4.2.4"
   }
 }
