@@ -60,6 +60,26 @@
           @apply list-disc list-inside;
           @apply py-4;
         }
+
+        .footnote-ref {
+          @apply text-primary;
+        }
+    }
+
+    .footnotes {
+      li {
+        @apply list-decimal list-inside;
+        @apply py-2;
+      }
+
+      li > p {
+        display:inline
+      }
+
+      .footnote-backref {
+        /* use accent link color for footnote back reference */
+        @apply text-primary;
+      }
     }
 }
 
