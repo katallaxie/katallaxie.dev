@@ -5,9 +5,11 @@
     // Use ubuntu-24.04 or ubuntu-18.04 on local arm64/Apple Silicon.
     "args": {
       "VARIANT": "ubuntu-24.04",
+      "USERNAME": "${localEnv:USERNAME}",
+      "USER_UID": "${localEnv:UID}",
     },
   },
-  "remoteUser": "vscode",
+  "remoteUser": "${localEnv:USER}",
   "features": {
     "ghcr.io/devcontainers/features/hugo:1": {},
     "ghcr.io/devcontainers/features/node:1": {},
