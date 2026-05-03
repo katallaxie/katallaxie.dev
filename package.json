@@ -2,7 +2,7 @@
   "name": "katallaxie.dev",
   "private": true,
   "scripts": {
-    "start": "hugo server --buildDrafts --cleanDestinationDir --logLevel debug --gc --noHTTPCache --printI18nWarnings --templateMetrics --templateMetricsHints",
+    "start": "hugo server --buildDrafts --cleanDestinationDir --logLevel debug --gc --noHTTPCache --printI18nWarnings --templateMetrics --templateMetricsHints --bind 0.0.0.0",
     "build": "hugo --minify --gc --logLevel debug --printI18nWarnings --templateMetrics --templateMetricsHints --baseURL https://katallaxie.dev"
   },
   "browserslist": [
