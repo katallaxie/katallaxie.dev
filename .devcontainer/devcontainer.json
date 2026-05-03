@@ -7,6 +7,9 @@
       "VARIANT": "ubuntu-24.04"
     }
   },
+  "runArgs": [
+    "--userns=keep-id"
+  ],
   "postStartCommand": "git config --global --add safe.directory ${containerWorkspaceFolder}",
   "postCreateCommand": "bash scripts/postCreateCommand.sh",
   "features": {
