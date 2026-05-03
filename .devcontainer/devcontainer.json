@@ -4,8 +4,8 @@
     // Update 'VARIANT' to pick an Ubuntu version: jammy / ubuntu-22.04, focal / ubuntu-20.04, bionic /ubuntu-18.04
     // Use ubuntu-24.04 or ubuntu-18.04 on local arm64/Apple Silicon.
     "args": {
-      "VARIANT": "ubuntu-24.04"
-    }
+      "VARIANT": "ubuntu-24.04",
+    },
   },
   "runArgs": ["--userns=keep-id"],
   "postCreateCommand": "git config --global --add safe.directory ${containerWorkspaceFolder}",
@@ -13,11 +13,11 @@
     "ghcr.io/devcontainers/features/github-cli:1": {},
     "ghcr.io/devcontainers/features/git-lfs:1": {},
     "ghcr.io/devcontainers/features/hugo:1": {},
-    "ghcr.io/devcontainers/features/node:1": {}
+    "ghcr.io/postfinance/devcontainer-features/node:1": {},
   },
   "customizations": {
     "vscode": {
-      "extensions": ["GitHub.copilot", "GitHub.vscode-github-actions"]
-    }
-  }
+      "extensions": ["GitHub.copilot", "GitHub.vscode-github-actions"],
+    },
+  },
 }
