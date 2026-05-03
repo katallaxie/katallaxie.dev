@@ -7,7 +7,7 @@
       "VARIANT": "ubuntu-24.04",
     },
   },
-  "remoteUser": "developer",
+  "remoteUser": "vscode",
   "features": {
     "ghcr.io/devcontainers/features/hugo:1": {},
     "ghcr.io/devcontainers/features/node:1": {},
