@@ -2,12 +2,12 @@
 ---
 date: 2023-11-01T00:00:00+01:00
 draft: false
-title: Domain Architect
-jobTitle: "Domain Architect"
+title: Enterprise Architect
+jobTitle: "Enterprise Architect"
 company: "ZEISS"
 location: "Jena, Germany"
 duration: "2023-present"
-summary: Moved back to Jena, joined an 175 year old technology leader 🦄.
+summary: Driving the infusion of business processes with AI at an iconic technology leader 🦄. 
 ---
 
-### Moved back to Jena, joined an 175 year old technology leader 🦄
+### Driving the infusion of business processes with AI at an iconic technology leader 🦄.
