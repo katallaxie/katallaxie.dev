@@ -19,7 +19,7 @@
     "@tailwindcss/forms": "^0.x",
     "@tailwindcss/line-clamp": "^0.x",
     "@tailwindcss/postcss": "^4.3.0",
-    "@tailwindcss/typography": "^0.5.19",
+    "@tailwindcss/typography": "^0.5.20",
     "autoprefixer": "^10.x",
     "daisyui": "^5.5.23",
     "postcss-cli": "^11.x",
