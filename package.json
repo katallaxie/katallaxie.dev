@@ -21,7 +21,7 @@
     "@tailwindcss/postcss": "^4.3.0",
     "@tailwindcss/typography": "^0.5.20",
     "autoprefixer": "^10.x",
-    "daisyui": "^5.5.23",
+    "daisyui": "^5.6.2",
     "postcss-cli": "^11.x",
     "postcss": "^8.x",
     "tailwindcss-writing-mode": "^1.0.0",
